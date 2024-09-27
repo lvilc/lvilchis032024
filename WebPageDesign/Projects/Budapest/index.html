@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest</title>
+    <style>
+    body{
+        background-color: #92cef8 ;
+        background-image: url(Images/budapestheader.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 100px;
+    }
+    #wrapper{
+        width: 90%;
+        max-width: 1024px;
+        margin: auto;
+        border: 2px solid black;
+        box-shadow: 0px 0px 10px 10px black;
+    }
+    #pageheader{
+        min-height: 150px;
+        background-color:darksalmon;
+        background-image: url(Images/budapestheadersmall.jpg);
+        background-size: cover;
+    }
+    #media{
+        background-color: #4b2730 ;
+        min-height: 350px;
+        padding: .5rem;
+    }
+    #mainnav{
+        background-color: #4b2730;
+        min-height: 500px;
+        padding: .5rem;
+        flex-basis: 25%;
+    }
+    main{
+        background-color: blanchedalmond;
+        color: black;
+        padding: .5rem;
+        min-height: 500px;
+        flex-basis: 75%;
+    }
+    footer{
+        min-height: 50px;
+        padding: .5rem;
+        background-color: #4b2730  ;
+        color: white;
+        text-align: center;
+    }
+    iframe{
+        width: 80%;
+        margin: auto;
+        display: block;
+        aspect-ratio: 560/315;
+    }
+    #fb001{
+        display: flex;
+    }
+    #mainnav>ul{
+        list-style-type: none;
+        padding: .25rem;
+    }
+    #mainnav a{
+        color: white;
+    }
+    #logoheader{
+            height: 200px;
+            width: 235px;
+            background-color:none;
+            background-image: url(Images/budapestlogo.png);
+            transition: all 2s;
+            position: absolute;
+            top: 20px;
+            left: 100px;
+        }
+        #logoheader:hover{
+            transform: rotate(-10deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="pageheader">
+            <div id="logoheader"></div>
+        </header>
+        <div id="media">
+            <iframe src="https://www.youtube.com/embed/a_g-tmdBrvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="fb001">
+            <nav id="mainnav">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="ststephansbasilica.html">St. Stephen's Basilica</a>
+                    </li>
+                    <li>
+                        <a href="fishermansbastion.html">Fisherman's Bastion</a>
+                    </li>
+                    <li>
+                        <a href="budacastle.html">Buda Castle</a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <h1>Welcome to Budapest</h1>
+            </main>
+        </div>
+        <footer>
+            &copy; Lissandra 2023
+        </footer>
+    </div>
+</body>
+</html>

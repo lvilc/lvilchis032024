@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        #wrapper
+        {
+            width: 60%;
+            margin: auto;
+            display:grid;
+            grid-template-areas: 
+            "main main articleone articletwo"
+            "main main articlethree articlefour"
+            "nav sectionone sectionone aside"
+            "sectiontwo sectiontwo footer aside"
+            ;
+            gap: 3px;
+            background-color: black;
+            border: 3px solid black;
+        }
+        main
+        {
+            background-color: #eff087;
+            min-height: 200px;
+            padding: 10px;
+            grid-area: main;
+        }
+        #articleone
+        {
+            grid-area: articleone;
+            background-color: #427d4c;
+            min-height: 200px;
+        }
+        #articletwo
+        {
+            grid-area: articletwo;
+            background-color: #427d4c;
+            min-height: 200px;
+        }
+        #articlethree
+        {
+            grid-area: articlethree;
+            background-color: #427d4c;
+            min-height: 200px;
+        }
+        #articlefour
+        {
+            grid-area: articlefour;
+            background-color: #427d4c;
+            min-height: 200px;
+        }
+        nav
+        {
+            background-color: #d85b0c;
+            min-height: 200px;
+            grid-area: nav;
+        }
+        section
+        {
+            background-color: #10bad9;
+            min-height: 200px;
+        }
+        #sectionone
+        {
+            grid-area: sectionone;
+        }
+        #sectiontwo
+        {
+            grid-area: sectiontwo;
+        }
+        aside
+        {
+            background-color: #bb5cd4;
+            min-height: 200px;
+            grid-area: aside;
+        }
+        footer
+        {
+            background-color: #d44c8c;
+            min-height: 200px;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <main>Main</main>
+        <article id="articleone">Article01</article>
+        <article id="articletwo">Article02</article>
+        <article id="articlethree">Article03</article>
+        <article id="articlefour">Article04</article>
+        <nav>Nav</nav>
+        <section id="sectionone">Section01</section>
+        <section id="sectiontwo">Section02</section>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

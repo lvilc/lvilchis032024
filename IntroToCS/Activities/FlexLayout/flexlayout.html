@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        #wrapper
+        {
+            width: 60%;
+            margin: auto;
+            border: 1.5px solid black;
+        }
+        #fb1
+        {
+            display: flex;
+        }
+        #fb2
+        {
+            display: flex;
+        }
+        main
+        {
+            background-color: #eff087;
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 50%;
+        }
+        #main1
+        {
+            border-top: 1.5px solid black;
+            border-left: 1.5px solid black;
+            border-right: 1.5px solid black;
+        }
+        #main2
+        {
+            border-bottom: 1.5px solid black;
+            border-left: 1.5px solid black;
+            border-right: 1.5px solid black;
+        }
+        article
+        {
+            background-color: #427d4c;
+            min-height: 100px;
+            padding: 10px;
+            flex-basis: 25%;
+            border: 1.5px solid black;
+        }
+        #fb3
+        {
+            display: flex;
+        }
+        #fb4
+        {
+            display: flex;
+
+        }
+        nav
+        {
+            background-color: #d85b0c;
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 25%;
+            border: 1.5px solid black;
+        }
+        section
+        {
+            background-color: #10bad9;
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 50%;
+            border: 1.5px solid black;
+        }
+        aside
+        {
+            background-color: #bb5cd4;
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 25%;
+        }
+        #aside1
+        {
+            border-top: 1.5px solid black;
+            border-left: 1.5px solid black;
+            border-right: 1.5px solid black;
+        }
+        #aside2
+        {
+            border-bottom: 1.5px solid black;
+            border-left: 1.5px solid black;
+            border-right: 1.5px solid black;
+        }
+        footer
+        {
+            background-color: #d44c8c;
+            min-height: 200px;
+            padding: 10px;
+            flex-basis: 25%;
+            border: 1.5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="fb1">
+            <main id="main1">Main</main>
+            <article id="article1">Article01</article>
+            <article id="article2">Article02</article>
+        </div>
+        <div id="fb2">
+            <main id="main2"></main>
+            <article id="article3">Article03</article>
+            <article id="article4">Article04</article>
+        </div>
+        <div id="fb3">
+            <nav>Nav</nav>
+            <section id="section1">Section01</section>
+            <aside id="aside1"></aside>
+        </div>
+        <div id="fb4">
+            <section id="section2">Section02</section>
+            <footer>Footer</footer>
+            <aside id="aside2">Aside</aside>
+        </div>
+    </div>
+</body>
+</html>

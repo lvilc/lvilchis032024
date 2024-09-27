@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+
+
+<style>
+    body
+    {
+        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    }
+h1
+    {text-align:center;}
+
+div
+{
+    color:white;
+    margin:auto;
+    margin-bottom:40px;
+    padding:10px;
+}
+div.box
+{
+    width:200px;
+    height:200px;
+    background-color:steelblue;
+}
+
+div#one
+{
+    background-color: red;
+    transition: all 2s;
+}
+
+div#one:hover
+{
+    background-color: aqua;
+    border-radius: 35px 0px 35px 0px;
+
+    box-shadow: 15px 15px 5px 10px black;
+    /* horizontal offset, verticle offset, blur, spread */
+    transform: translate(500px, 10px) rotate(360000deg);
+}
+
+div#two
+{
+    background-color: coral;
+    transition: all 2s;
+}
+div#two:hover
+{
+    background-color: steelblue;
+    border-radius: 50%;
+    box-shadow: inset 25px 5px 15px 5px black, 15px 15px 10px black;
+    transform: scale(0.25) rotate(36000deg);
+}
+
+div#three
+{
+    background-color: lemonchiffon;
+    transition: all 2s;
+}
+div#three:hover
+{
+    background-color: crimson;
+    transform: rotate(360deg) skew(25deg, 40deg);
+}
+</style>
+
+</head>
+
+<body>
+<h1> Demo</h1>
+
+<div class="box" id="one">
+</div>
+
+
+<div class="box" id="two">
+</div>
+
+
+<div class="box" id="three">
+</div>
+
+
+
+</body>
+</html>

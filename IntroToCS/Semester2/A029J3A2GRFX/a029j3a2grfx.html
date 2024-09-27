@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2GRFX - Complex Transitions</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            color: white;
+        }
+        body
+        {
+            background-image: url(Images/background.avif);
+        }
+        #background
+        {
+            background-image: url(Images/grass.jpg);
+            width: 1000px;
+            height: 450px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 10px solid black;
+            margin: auto;
+        }
+
+        #daisy
+        {
+            background-image: url(Images/DaisySeed.webp);
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 60px;
+            top: 235px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 2s;
+            transition-timing-function: ease-out;
+        }
+        #daisy:hover
+        {
+            background-image: url(Images/daisy.webp);
+            transform: scale(2.5);
+        }
+
+        #lily
+        {
+            background-image: url(Images/lilyseed.webp);
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 340px;
+            top: 137px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in;
+        }
+        #lily:hover
+        {
+            background-image: url(Images/lily.png);
+            height: 150px;
+            transform: scale(1.5) rotate(-30deg);
+        }
+
+        #orchid
+        {
+            background-image: url(Images/orchidseed.png);
+            width: 120px;
+            height: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 590px;
+            top: 40px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 2s;
+            transition-timing-function: linear;
+        }
+        #orchid:hover
+        {
+            background-image: url(Images/orchid.png);
+            height: 170px;
+            width: 150px;
+            transform: scale(1.2) skewX(10deg);
+        }
+
+        #sunflower
+        {
+            background-image: url(Images/sunflowerseed.png);
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 850px;
+            top: -60px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in-out;
+        }
+        #sunflower:hover
+        {
+            background-image: url(Images/sunflower.png);
+            transform: scale(2.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>A029J3A2GRFX - Complex Transitions</h1>
+    <div id="background">
+        <div id="daisy"></div>
+        <div id="lily"></div>
+        <div id="orchid"></div>
+        <div id="sunflower"></div>
+    </div>
+</body>
+</html>

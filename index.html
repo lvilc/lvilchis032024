@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lissandra Vilchis - Portfolio</title>
+
+    <style>
+        /* Mobile design first */
+
+        :root
+        {
+            --color-primary: #fff103;
+            --color-secondary: black;
+            --color-tertiary: white;
+            --color-quaternary:#01994c;
+            --color-quinary:#ed1c26;
+        }
+
+        html
+        {
+            scroll-behavior: smooth;
+        }
+
+        body
+        {
+            background-image: url(Images/ccccaaaarrrbbbboooonnnnfffiiiibbbbbeeeeerrrrrrr.png);
+        }
+
+        #containall
+        {
+            padding-top: 4rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .container
+        {
+            background-color: white;
+            min-height: 10rem;
+            max-width: 75rem;
+            margin: auto;
+            padding: 2rem 3rem 2rem 3rem;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        #pageheader
+        {
+            min-height: 200px;
+            background-color: var(--color-primary);
+            padding: 1rem;
+        }
+        #pageheader .container
+        {
+            background-color: none;
+            background-image: url(Images/monzalivery.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: none;
+        }
+        #logo
+        {
+            background-image: url(Images/logo.png);
+            background-size: cover;
+            width: 175px;
+            height: 175px;
+            position: absolute;
+            left: calc(50% - 75px);
+            top: 10px;
+            transition: all 2s;
+        }
+
+        #pagenav
+        {
+            background-color: none;
+            min-height: 40px;
+            width: 300px;
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+            margin: auto;
+            position: absolute;
+            bottom: -10px;
+            left: calc(50% - 150px);
+        }
+
+        #pagenav a
+        {
+            color: var(--color-tertiary);
+            text-decoration: none;
+            text-transform: lowercase;
+        }
+        #pagenav a:hover
+        {
+            color: var(--color-quinary);
+        }
+
+        #media
+        {
+            min-height: 200px;
+            background-image: url(Images/mediacarbonfiberpic.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 1rem;
+        }
+        #media h1
+        {
+            text-align: center;
+            font-size: 3rem;
+        }
+        #media h2
+        {
+            text-align: center;
+            font-size: 2rem;
+        }
+        #media blockquote
+        {
+            background-color:none;
+            max-width: 50%;
+            margin: auto;
+        }
+
+        #career
+        {
+            min-height: 200px;
+            background-color: var(--color-quaternary);
+            padding: 1rem;
+        }
+
+        #pagecontent
+        {
+            min-height: 200px;
+            background-color: var(--color-quaternary);
+            padding: 1rem;
+        }
+
+        #semester1
+        {
+
+            min-height: 200px;
+            background-color:var(--color-tertiary);
+            padding: 1rem;
+        }
+
+        #semester2
+        {
+            min-height: 200px;
+            background-color:var(--color-tertiary);
+            padding: 1rem;
+            display: none;
+        }
+
+        #pagefooter
+        {
+            min-height: auto;
+            background-color: var(--color-quinary);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        #pagefooter .container
+        {
+            min-height: 10px;
+        }
+
+        #subpagefooter
+        {
+            min-height: 200px;
+            background-color:var(--color-quinary);
+            padding: 1rem;
+        }
+        #top
+        {
+            width: 20px;
+            height: 20px;
+            background-color: ghostwhite;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border-radius: 50%;
+        }
+        /* iframe
+        {
+            width: ;
+        } */
+
+        /* Media Queries */
+        @media only screen and (min-width:320px)
+        {
+            #pagecontent
+            {
+
+            }
+        }
+
+        @media only screen and (min-width:480px)
+        {
+            #pagecontent
+            {
+
+            }   
+            #media
+            {
+                
+            }
+        }
+
+        @media only screen and (min-width:768px)
+        {
+            #pagecontent
+            {
+                
+            }
+            #media
+            {
+                height: 350px;
+            }
+        }
+
+        @media only screen and (min-width:1024px)
+        {
+            #pagecontent
+            {
+
+            }
+            #logo
+            {
+                left: 5px;
+            }
+            #media
+            {
+                height: 450px;
+                background-image: url(Images/mediacarbonfiberpic.webp);
+            }
+            #pagenav
+            {
+                top: 0px;
+                right: 0px;
+                left: auto;
+                bottom: auto;
+            }
+            #pagenav .container
+            {
+                
+            }
+        }
+
+        @media only screen and (min-width:1200px)
+        {
+            #media
+            {
+                height: 600px;
+            }
+            #pagecontent
+            {
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Named anchor to navigate to the top of the page -->
+    <a name="topanchor"></a>
+    
+    
+        
+        <!-- begin pageheader -->
+        <header id="pageheader"> 
+    
+            <div class="container">
+                <div id="logo"></div>
+                <nav id="pagenav">
+                    <a href="#career">Career</a>  
+                    <a href="#semester1">Semester 1</a> 
+                    <a href="#semester2">Semester 2</a>
+                </nav>
+            </div>
+    
+        </header>
+        <!-- end pageheader -->
+    
+        
+        <!-- begin media -->
+        <section id="media">
+            <h1>Lissandra Vilchis</h1>
+            <h2>Portfolio</h2>
+            <blockquote>To be or not to be.</blockquote>
+            <!-- <iframe src="https://www.youtube.com/embed/8TmrPvoHSGQ?si=bv0T4VsHRFBxDXls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    
+        </section>
+        <!-- end media -->
+        
+        <div id="containall">
+
+        <!-- begin pagecontent -->
+        <main id="pagecontent">
+            
+            <div class="container">
+                <h2>Introduction</h2>
+                <p>Welcome to my Portfolio! My name is Lissandra Vilchis and I've been taking a webpage class for 3 years. I recently started enjoying motorsports, hence my theme and my free time is spent with my cats and listening to random songs I find or vinyls with my mom. So far, I've been intrested in persuing a career in the computer science field so I hope to improve my skills.</p>
+            </div>
+            
+        </main>
+        <!-- end pagecontent -->
+    
+        <!-- begin career -->
+        <section id="career">
+            <a name="career"></a>
+            <div class="container">
+                <a name="career"></a>
+                <h2>Career</h2>
+                <ul>
+                    <li>Letter of Introduction</li>
+                    <li>Resume</li>
+                    <li>References</li>
+                    <li>Job Application</li>
+                    <li>Career Plan</li>
+                    <li>Work Samples</li>
+                    <li>Certificates</li>
+                </ul>
+            </div>
+    
+        </section>
+        <!-- end career -->
+        
+        <!-- begin semesters -->
+        <section id="semester1">
+            
+            <div class="container">
+                <a name="semester2"></a>
+                <h2>Semester 1</h2>
+                <ul>
+                    <li>A001</li>
+                    <li>A002</li>
+                    <li>A003</li>
+                    <li>A004</li>
+                </ul>
+            </div>
+    
+        </section>
+        <!-- end semesters -->
+    
+        <!-- begin semesters -->
+        <section id="semester2">
+            
+            <div class="container">
+                <a name="semester2"></a>
+                <h2>Semester 2</h2>
+                <ul>
+                    <li>A001</li>
+                    <li>A002</li>
+                    <li>A003</li>
+                    <li>A004</li>
+                </ul>
+            </div>
+    
+        </section>
+        <!-- end semesters -->
+    
+        <!-- begin pagefooter -->
+        <footer id="pagefooter">
+    
+            <div class="container">
+                <a href="https://www.chsserver01.org/" target="new">chago</a> | 
+                <a href="https://chsserver01.org/chaggy.net/colortheory/colorscheme2/index-en.html" target="new">color schemes</a> | 
+                <a href="https://coalingahuron.aeries.net/" target="new">aeries</a> | 
+                <a href="https://chs.chusd.org/o/chs" target="new">chs</a> | 
+                <a href="https://mycareertech.com/">mycareertech</a> | 
+                <a href="https://classroom.google.com/u/0/" target="new">classroom</a> | 
+                <a href="https://codepip.com/login/" target="new">codepip</a> | 
+                <a href="https://minga.io/" target="new">minga</a>
+            </div>
+    
+        </footer>
+        <!-- end pagefooter -->
+    
+        <!-- begin subpagefooter -->
+        <footer id="subpagefooter">
+    
+            <div class="container">subpagefooter</div>
+    
+        </footer>
+        <!-- end subpagefooter -->
+        
+    </div>
+    <div id="top"><a href="#topanchor">top</a></div>
+</body>
+</html>

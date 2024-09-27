@@ -1,0 +1,26 @@
+        body
+        {
+            background-color:bisque;
+        }
+        h1
+        {
+            background-color: lightsalmon;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav
+        {
+            background-color: lemonchiffon;
+            padding: 1rem;
+        }
+        a
+        {
+
+        }
+        ul
+        {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+        }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFB002 - Flexbox Layout002</title>
+    <style>
+        header{
+            height: 150px;
+            background-color: cadetblue;
+        }
+        nav{
+            height: 75px;
+            background-color: crimson;
+        }
+        #flexbox{
+            display:flex;
+            height: 300px;
+        }
+        main{
+            background-color: darkblue;
+            flex-basis: 75%;
+        }
+        aside{
+            background-color: plum;
+            flex-basis: 25%;
+        }
+        .qsections{
+            height: 200px;
+            border: 1px solid black;
+            background-color: hotpink;
+        }
+        footer{
+            background-color: rebeccapurple;
+            height: 100px;
+        }
+        #wrapper{
+            max-width: 1024px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+            <header> #pageheader</header>
+            <nav>#topnav</nav>
+            <div id="flexbox">
+                <main> Main </main>
+                <aside>#sideaside</aside>
+            </div>
+        <section class="qsections">
+            #q1section
+        </section>
+        <section class="qsections">
+            #q2section
+        </section>
+        <section class="qsections">
+            #q3section
+        </section>
+        <section class="qsections">
+            #q4section
+        </section>
+            <footer> #pagefooter</footer>
+</div>
+</body>
+</html>

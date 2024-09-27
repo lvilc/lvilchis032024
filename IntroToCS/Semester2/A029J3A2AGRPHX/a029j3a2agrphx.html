@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2A - Keyframe Animations</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        body
+        {
+            background-image: url(Images/grass.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #airplane
+        {
+            width: 500px;
+            height: 200px;
+            background-color: none;
+            margin: auto;
+            padding: 1rem;
+            animation-name: liftoff;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            background-image: url(Images/airplane.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @keyframes liftoff
+        {
+            from
+            {
+                transform: translate(-100px, 500px) rotate(0deg);
+            }
+
+            to
+            {
+                transform: translate(1000px, -500px) rotate(-30deg);
+            }
+        }
+        #hotairballoon
+        {
+            width: 110px;
+            height: 150px;
+            background-image: url(Images/hot-air-balloon-png.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: -250px;
+            animation-name: float;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes float
+        {
+            from
+            {
+                transform: translate(0px, 0px);
+            }
+            to
+            {
+                transform: translate(1000px, 0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>A029J3A2A - Keyframe Animations</h1>
+    <div id="airplane"></div>
+    <div id="hotairballoon"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+
+
+</body>
+</html>

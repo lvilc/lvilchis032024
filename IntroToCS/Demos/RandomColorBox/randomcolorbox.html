@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Box</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        #randombox
+        {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Color Box</h1>
+    <div id="randombox"></div>
+
+    <script>
+        // Change colors at set interval
+        window.setInterval(createRandomColors, 100);
+
+        function createRandomColors()
+        {
+        // Create variables and set background color using rgb
+        let red;
+        let green;
+        let blue;
+
+        // Assign value
+        red = Math.random() * 256;
+        green = Math.random() * 256;
+        blue = Math.random() * 256;
+
+        // Set box color
+        let randomColorBox;
+        randomColorBox = window.document.querySelector("#randombox");
+
+        // Literal place variables with ${variablename}
+        // use tic marks
+        randomColorBox.style.backgroundColor = `rgb(${red},${green},${blue})`;
+        }
+
+        
+    </script>
+</body>
+</html>

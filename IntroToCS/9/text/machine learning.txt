@@ -1,0 +1,6 @@
+Machine Learning
+The biggest quality that sets AI aside from other computer science topics is the ability to easily automate tasks by employing machine learning, which lets computers learn from different experiences rather than being explicitly programmed to perform each task. This capability is what many refer to as AI, but machine learning is actually a subset of artificial intelligence.
+Machine learning involves a system being trained on large amounts of data, so it can learn from mistakes, and recognize patterns in order to accurately make predictions and decisions, whether they've been exposed to the specific data or not. 
+
+Examples of machine learning include image and speech recognition, fraud protection, and more. One specific example is the image recognition system when users upload a photo to Facebook. The social media network can analyze the image and recognize faces, which leads to recommendations to tag different friends. With time and practice, the system hones this skill and learns to make more accurate recommendations.
+

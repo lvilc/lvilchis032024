@@ -1,0 +1,2 @@
+What are the different types of AI?
+Artificial intelligence can be divided into three widely accepted subcategories: narrow AI, general AI, and super AI.

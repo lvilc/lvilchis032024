@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics - Image File Types</title>
+</head>
+<style>
+    body{
+        background-color: lemonchiffon;
+        color: peachpuff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1{
+        background-color: darksalmon;
+        padding: 13px;
+        text-align: center;
+        border: 5px solid peachpuff;
+        font-size: 55px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h1:hover{
+        border: 5px dashed peachpuff;
+    }
+    img{
+        border-radius: 30px;
+        border: 3px solid darksalmon;
+        display: block;
+        margin: auto;
+    }
+    img:hover{
+        transform: rotate(5deg);
+    }
+    h2{
+        background-color: darksalmon;
+        padding: 10px;
+        border: 2px solid peachpuff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h2:hover{
+        background-color: lemonchiffon;
+        color: darksalmon;
+    }
+</style>
+<body>
+    <h1>Graphics - Image Files Types</h1>
+    <img src="Images/imagefileformats.png" alt="images files format">
+    <p>Up to this point we have been using images on our web pages and creating images with Photoshop. You have used .jpg, .gif, and .png, but what are the differences among the image file types? Why use a .jpg instead of a .gif? What are the advantages and disadvantages of each image file type?</p>
+    <p>As you have noticed, creating web pages requires the use and creation of images. There are many image file types you can use. As you know, the most common include .jpg, .gif., and .png, but there are others. There have been additional image file types created for the web including .svg and .webP.</p>
+    <p>In this class we will continue learning about images. Specifically, we will learn the advantages and disadvantages of the three primary image file types used in web design. We will focus on color support, animation support, transparency support, and file size.</p>
+    <p>The following section headers include the image file type extension, the extension definition, and the primary use for the image file type. The associated paragraph goes over the image file type features.</p>
+
+    <h2> .JPG and .JPEG (Joint Photographic Expert Group) - Photos</h2>
+    <img src="Images/jpeg.png" alt="jpeg">
+    <p>This image file type is commonly used by most of you on a daily basis. Most photographs saved by your cell phone or camera are saved as a .jpg or .jpeg. This image file type is focuses great color support in a small file size. It has the following features:</p>
+    <ul>
+        <li>Color Support - Millions of Colors</li>
+        <li>Animation Support - No</li>
+        <li>Transparency Support - No</li>
+        <li>File Size - Small (compressed)</li>
+    </ul>
+
+    <h2>.GIF (Graphics Interchange Format) - Clip-Art</h2>
+    <img src="Images/gif.png" alt="gif">
+    <p>This image file type is often used for animated images, however, it can also be used for static images. It is often used for non-photo quality images, often clip-art. For example, images of Mickey Mouse, Bart Simpson, and Spongebob use few colors and are good candidates for the .gif image file type. This image file type has the following features:</p>
+    <ul>
+        <li>Color Support - 256 Colors</li>
+        <li>Animation Support - Yes</li>
+        <li>Transparency Support - Yes</li>
+        <li>File Size - Small</li>
+    </ul>
+
+    <h2>.PNG (Portable Network Graphics) - Photos and Clip-Art</h2>
+    <img src="Images/png.png" alt="png">
+    <p>This image file type is a hybrid of .jpg and .gif. It has good features of both. It supports photo quality images with transparency, however, file sizes tend to be large. Initially, it was rare to see the use of .pngs on the web, but with increase of download speeds the last several years, .pngs have become common. This image file type has the following features:</p>
+    <ul>
+        <li>Color Support - Millions of Colors</li>
+        <li>Animation Support - No</li>
+        <li>Transparency Support - Yes</li>
+        <li>File Size - Large</li>
+    </ul>
+
+    <h2>.SVG (Scalable Vector Graphics) - Logos and Icons</h2>
+    <p>A newer image file format used on the web for scalable (resizable) images. Images are defined in text, vector graphic shapes, and bitmap images. The beauty of vector graphics is the scalability without a loss in quality. Another great feature is the small file size. We will explore the use of .svg files later this school year.</p>
+
+    <h2>.WebP (Web Picture) - Photos and Clip-Art</h2>
+    <p>One of the newest file formats released by Google in 2010. WebP is a highly compressed file format which averages 25-35% smaller file sizes than .jpgs. Currently, you need a plug-in to edit .webp images in Photoshop. We won't be using .webP images in this class, but expect the use of this file image format to grow in the future.</p>
+
+    <h2>.psd (Photoshop Document) - Photo Authoring</h2>
+    <img src="Images/photoshopiconframe.png" alt="photoshop icon">
+    <p>As you know, Photoshop creates .psd files. This file format is not useable on the web! Instead, we use .psd files to create images that will be exported to other useable image file types such as .jpg, .gif, .png, and .svg. Think of .psd files as your design files that will be used to create the images you desire.</p>
+</body>
+</html>

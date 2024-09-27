@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body
+        {
+            background-color: #aebbcb;
+            margin-top: 150px;
+        }
+        div#wrapper
+        {
+            background-color: #53555b;
+            padding: 20px;
+            width: 70%;
+            min-height: 500px;
+            max-width: 1024px;
+            margin: auto;
+            display: grid;
+            grid-template-areas: 
+            "ph ph ph"
+            "me me me"
+            "ln ma ma"
+            "pf pf pf"
+            ;
+        }
+        header
+        {
+            background-color: #2e3b4d;
+            height: 170px;
+            grid-area: ph;
+        }
+        header h1
+        {
+            font-size: 75px;
+            text-align: center;
+            position: relative;
+            top: -150px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+        #headerlogo
+        {
+            width: 170px;
+            height: 170px;
+            background-image: url(Images/Ai\ logo.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: -100px;
+            margin: auto;
+        }
+        div#media
+        {
+            background-image:url(Images/artificial-intelligence.jpg);
+            min-height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-area: me;
+        }
+        #leftnav
+        {
+            min-height: 500px;
+            background-color: #86828d;
+            grid-area: ln;
+            padding: 20px;
+        }
+        nav ul
+        {
+            list-style-type: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        main
+        {
+            min-height: 500px;
+            background-color: white;
+            grid-area: ma;
+            padding: 10px;
+        }
+        main h1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        main img
+        {
+            display: block;
+            margin: auto;
+        }
+        #pagefooter
+        {
+            min-height: 90px;
+            background-color: #787787;
+            grid-area: pf;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+        nav a
+        {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header"> 
+            <div id="headerlogo"></div>
+            <h1>AI</h1>
+        </header>
+        <div id="media"></div>
+        <nav id="leftnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aiservices.html">AI Services</a></li>
+                <li><a href="ailearning.html">How AI Learns</a></li>
+                <li><a href="aiimpacts.html">AI Impacts</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>AI Services</h1>
+            <img src="Images/anyone-interested-in-making-the-animation-for-the-matrix-v0-4904jjjxjlja1.webp" width="400px" alt="Black screen with green code">
+                <p>
+                    Services Available
+    General consumers and businesses alike have a wealth of AI services available to expedite tasks and add convenience to day-to-day life -- you probably have something in your home that uses AI in some capacity.
+    Here are some common examples of artificial intelligence available to the public, both free and for a fee:
+                </p>
+		<p>
+		    Voice assistants: Amazon Alexa sitting in that Echo device on your shelf or Apple's Siri in your iPhone and Google Assistant all use natural language processing to understand and respond to your questions or commands.
+    		Chatbots: AI chatbots are another form of virtual assistants that can interact with people and, in some cases, hold human-like conversations, even mimicking empathy and concern. 
+		</p>
+		<p>Language translation: Machine learning reaches far and wide, and services like Google Translate, Microsoft Translator, Amazon Translate, and ChatGPT all use it to translate text.</p>
+		<p>Productivity: Microsoft 365 Copilot is a great example of a LLM used as an AI productivity tool, embedded within Word, PowerPoint, Outlook, Excel, Teams, and more to automate tasks for you. Simply asking, 'email the team about the latest status on the project' will trigger Copilot to automatically gather information from emails and documents to generate a text with what you asked.</p>
+		<p>Image and video recognition: Different programs use AI to find information about the content in images and videos, such as the faces, text, and objects within them. Clarifai, which employs machine learning to organize unstructured data from sources, and Amazon Rekognition, an AWS service that lets users upload images to receive information, are two examples of this.</p>
+		<p>Software development: Many developers have started using ChatGPT to write and debug code, but there are many other AI tools available to make a programmer's job easier. One example, the AI pair programmer GitHub Copilot by OpenAI Codex, is a generative language model that can write code faster with less effort by autocompleting comments and code instantly.</p>
+		<p>Building a business: Aside from an everyday user availing themselves of artificial intelligence around them, there are services offering AI tools for businesses, including OpenAI's GPT-4 API (currently on waitlist) to built applications and services using the LLM; or Amazon Bedrock, a suite of cloud-based AI tools for developers.</p>
+        </main>
+        <footer id="pagefooter">
+            Career Skills Challenge 2024
+        </footer>
+
+
+    </div>
+</body>
+</html>

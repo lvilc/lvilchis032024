@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Grid</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: yellow;
+        }
+        #wrapper
+        {
+            background-color: purple;
+            min-height: 100vh;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            gap: .5rem;
+            border: 3px solid black;
+            grid-template-areas: 
+            "he he he"
+            "me me me"
+            "na ma ma"
+            "a1 a2 a3"
+            "fo fo fo";
+        }
+        header
+        {
+            min-height: 150px;
+            background-color: orange;
+            padding: 1rem;
+            grid-area: he;
+        }
+        #media
+        {
+            min-height: 150px;
+            background-color: lime;
+            padding: 1rem;
+            grid-area: me;
+        }
+        nav
+        {
+            min-height: 150px;
+            background-color: lightblue;
+            padding: 1rem;
+            grid-area: na;
+        }
+        main
+        {
+            min-height: 150px;
+            background-color: white;
+            padding: 1rem;
+            grid-area: ma;
+        }
+        article
+        {
+            min-height: 150px;
+            background-color: teal;
+            padding: 1rem;
+            border: 1px solid silver;
+        }
+        #aricle1
+        {
+            background-color: slategray;
+            grid-area: a1;
+        }
+        #aricle2
+        {
+            background-color: lightsteelblue;
+            grid-area: a2;
+        }
+        #aricle3
+        {
+            background-color: coral;
+            grid-area: a3;
+        }
+        footer
+        {
+            min-height: 150px;
+            background-color: gray;
+            padding: 1rem;
+            grid-area: fo;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>Header</header>
+        <div id="media">Media</div>
+        <nav>Nav</nav>
+        <main>Main</main>
+        <article id="article1">Article 1</article>
+        <article id="article2">Article 2</article>
+        <article id="article3">Article 3</article>
+        <footer>Footer</footer>
+    </div>
+    <!-- end wrapper -->
+</body>
+</html>

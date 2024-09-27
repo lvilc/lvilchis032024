@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        form
+        {
+            padding: 1rem;
+            background-color: silver;
+        }
+        .display
+        {
+            height: 150px;
+            width: 150px;
+            background-color: coral;
+            border: 1px solid black;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <!-- Add event attributes -->
+        <button onclick="changeDivOne()">Change Div One</button>
+        <button onclick="changeDivTwo()">Change Div Two</button>
+        <button onclick="changeDivThree()">Change Div Three</button>
+        <button onclick="changeDivFour()">Change Div Four</button>
+    </form>
+
+    <div class="display" id="d001">001</div>
+    <div class="display" id="d002">002</div>
+    <div class="display" id="d003">003</div>
+    <div class="display" id="d004">004</div>
+
+    <script>
+        function changeDivOne()
+        {
+            //window.alert('Div One');
+            // Create variable
+            let d1; 
+            // Assign value to variable
+            d1 = window.document.querySelector('#d001');
+            // Change the div
+            d1.style.backgroundColor = "blue";
+            d1.style.borderRadius = '50%';
+        }
+        
+        function changeDivTwo()
+        {
+            let d2;
+            d2 = window.document.querySelector('#d002');
+            d2.style.color = "white";
+            d2.innerHTML = 'This is D2';
+        }
+
+        function changeDivThree()
+        {
+            let d3;
+            d3 = window.document.querySelector('#d003');
+            d3.style.backgroundColor = 'yellow';
+            d3.style.width = "300px";
+        }
+
+        function changeDivFour()
+        {
+            //
+        }
+    </script>
+</body>
+</html>

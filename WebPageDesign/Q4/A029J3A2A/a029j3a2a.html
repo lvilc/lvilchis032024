@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2A - Keyframe Animations From To</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+        h1, h2{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #rotator{
+            width: 10rem;
+            height: 10rem;
+            background-color: deepskyblue;
+            margin-left: 2rem;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes rotate
+        {
+            from{
+                margin-left: 0px;
+                transform: rotate(0deg);
+                background-color:blanchedalmond;
+            }
+            to{
+                margin-left: 80rem;
+                transform: rotate(2000deg);
+                background-color:darksalmon;
+            }
+        }
+        #felix{
+            width: 10rem;
+            height: 10rem;
+            background-color:indianred;
+            animation-name: height;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes height
+        {
+            from{height: 10rem; width: 10rem;}
+            to{ height: 1rem; width: 2rem;}
+        }
+        #manuel{
+            width: 10rem;
+            height: 10rem;
+            background-color:burlywood;
+            animation-name: borderradious;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes borderradious
+        {
+            from{border-radius: 0px 0px 0px 0px; background-color: ghostwhite;}
+            to{border-radius: 700px 0px 700px 0px; background-color:lemonchiffon;}
+        }
+    </style>
+</head>
+<body>
+    <h1>A029J3A2A</h1>
+    <h2>Keyframe Animations From To</h2>
+    <div id="rotator"></div>
+    <div id="felix"></div>
+    <div id="manuel"></div>
+</body>
+</html>

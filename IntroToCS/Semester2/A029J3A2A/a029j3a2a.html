@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2A - Keyframe Animations (From To)</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        #one
+        {
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            margin: auto;
+            animation-name: squareone;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes squareone
+        {
+            from
+            {
+                transform: rotate(0deg) scale(1);
+            }
+            to
+            {
+                transform: rotate(200deg) scale(.25);
+            }
+        }
+        #two
+        {
+            width: 300px;
+            height: 300px;
+            background-color: lightsteelblue;
+            margin: auto;
+            animation-name: squaretwo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes squaretwo
+        {
+            from
+            {
+                transform: skewY(0deg);
+            }
+            to
+            {
+                transform: skewY(50deg);
+            }
+        }
+        #three
+        {
+            width: 300px;
+            height: 300px;
+            background-color: deepskyblue;
+            margin: auto;
+            animation-name: squarethree;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }   
+        @keyframes squarethree
+        {
+            from
+            {
+                transform: rotate(0deg);
+            }
+            to
+            {
+                border-radius: 50%;
+                transform: rotate(360deg);
+                background-color:crimson;
+            }
+        }
+        #four
+        {
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+            margin: auto;
+            animation-name: squarefour;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes squarefour
+        {
+            from
+            {
+                transform: rotate(0deg);
+            }
+            to
+            {
+                transform: rotate(720deg) translate(100px, 100px) scale(.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>A029J3A2A - Keyframe Animations (From To)</h1>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+
+
+
+</body>
+</html>

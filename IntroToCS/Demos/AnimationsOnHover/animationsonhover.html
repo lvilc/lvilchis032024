@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+
+
+<style>
+	body
+	{
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	}
+h1
+	{text-align:center;}
+	
+div
+{
+	color:white;
+	margin:auto;
+	margin-bottom:40px;
+	padding:10px;
+}
+div.box
+{
+	width:200px;
+	height:200px;
+	background-color:steelblue;
+}
+div#one
+{
+    background-color: red;
+    transition: all 2s;
+}
+div#one:hover
+{
+    background-color: black;
+}
+
+div#two
+{
+
+}
+div#two:hover
+{
+    animation-name: recolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes recolor
+{
+    0%
+    {
+        background-color: red;
+    }
+    25%
+    {
+        background-color: black;
+    }
+    50%
+    {
+        background-color: purple;
+    }
+    75%
+    {
+        background-color: lime;
+    }
+    100%
+    {
+        background-color: yellow;
+    }
+}
+
+
+div#three
+{
+
+}
+</style>
+
+</head>
+
+<body>
+<h1> Demo</h1>
+
+<div class="box" id="one">
+</div>
+
+
+<div class="box" id="two">
+</div>
+
+
+<div class="box" id="three">
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas 2</title>
+    <style>
+        body
+        {
+            background-color: yellow;
+        }
+        #container
+        {
+            background-color: purple;
+            max-width: 1200px;
+            margin: auto;
+            padding-top: 8.5rem;
+            padding-bottom: 2.5rem;
+        }
+        #wrapper
+        {
+            background-color: darkblue;
+            max-width: 960px;
+            gap: 10px;
+            margin: auto;
+            display:grid;
+            grid-template-areas: 
+            "header header"
+            "media media"
+            "nav nav"
+            "main main"
+            "cardone cardtwo"
+            "footer footer"
+            "details details"
+            ;
+        }
+        #pageheader
+        {
+            background-color: orange;
+            min-height: 250px;
+            grid-area: header;
+            padding: 1rem;
+        }
+        #mainnav
+        {
+            background-color: aqua;
+            min-height: 400px;
+            grid-area: nav;
+            padding: 1rem;
+        }
+        #intromedia
+        {
+            background-color: lime;
+            min-height: 425px;
+            grid-area: media;
+            padding: 1rem;
+        }
+        #pagemain
+        {
+            background-color: white;
+            min-height: 400px;
+            grid-area: main;
+            padding: 1rem;
+        }
+        #card001
+        {
+            background-color: coral;
+            min-height: 200px;
+            grid-area: cardone;
+            padding: 1rem;
+        }
+        #card002
+        {
+            background-color: lightblue;
+            min-height: 200px;
+            grid-area: cardtwo;
+            padding: 1rem;
+        }
+        #pagefooter
+        {
+            background-color: gold;
+            min-height: 150px;
+            grid-area: footer;
+            padding: 1rem;
+        }
+        #pagedetails
+        {
+            background-color: silver;
+            min-height: 250px;
+            grid-area: details;
+            padding: 1rem;
+        }
+        @media screen and (min-width:700px) 
+        {
+            #wrapper
+            {
+            grid-template-areas: 
+            "header header header"
+            "media media media"
+            "nav main main"
+            "nav cardone cardtwo"
+            "footer footer footer"
+            "details details details"
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <header id="pageheader">#pageheader</header>
+            <nav id="mainnav">#mainnav</nav>
+            <div id="intromedia">#intromedia</div>
+            <main id="pagemain">#pagemain</main>
+            <section id="card001">#card001</section>
+            <section id="card002">#card002</section>
+            <footer id="pagefooter">#pagefooter</footer>
+            <footer id="pagedetails">#pagedetails</footer>
+        </div>
+    </div>
+</body>
+</html>

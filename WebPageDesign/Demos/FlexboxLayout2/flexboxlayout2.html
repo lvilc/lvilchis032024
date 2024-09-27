@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout 2</title>
+    <style>
+        body
+        {
+            background-color: hotpink;
+        }
+        #wrapper
+        {
+            border:4px solid black;
+            background-color: palevioletred;
+            max-width: 1024px;
+            margin:0 auto;
+        }
+        #pageheader
+        {
+            min-height:150px;
+            background-color: grey;
+            padding:1rem;
+            border: 1px solid black;
+        }
+        #media
+        {
+            min-height:150px;
+            background-color:antiquewhite;
+            padding:1rem;
+            border: 1px solid black;
+        }
+        #flexbox001
+        {
+            display:flex;
+            min-height: 250px;
+        }
+        #sectionq1
+        {
+            border: 1px solid black;
+            background-color: palevioletred;
+            min-height: 150px;
+            flex-basis:25%;
+        }
+        #sectionq2
+        {
+            border: 1px solid black;
+            background-color:royalblue;
+            min-height: 150px;
+            flex-basis:25%;
+        }
+        #sectionq3
+        {
+            border: 1px solid black;
+            background-color:plum;
+            min-height: 150px;
+            flex-basis:25%;
+        }
+        #sectionq4
+        {
+            border: 1px solid black;
+            background-color:pink;
+            min-height: 150px;
+            flex-basis:25%;
+        }
+        #pagefooter
+        {
+            border: 1px solid black;
+            background-color:orchid;
+            min-height: 150px;
+        }
+        </style>
+        </head>
+        <body>
+            <div id="wrapper">
+                <header id="pageheader">#pageheader</header>
+                <div id="media">#media</div>
+        
+                <div id="flexbox001">
+                    <div id="sectionq1">#sectionq1</div>
+                    <div id="sectionq2">#sectionq2</div>
+                    <div id="sectionq3">#sectionq3</div>
+                    <div id="sectionq4">#sectionq4</div>
+               </div>
+        
+               <footer id="pagefooter">#pagefooter</footer>
+            </div>
+            <!-- End the Wrapper -->
+        </body>
+        </html>
+        

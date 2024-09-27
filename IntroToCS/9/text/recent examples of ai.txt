@@ -1,0 +1,18 @@
+What are some recent examples of AI?
+Overall, the most notable advancements in AI are the development and release of GPT 3.5 and GPT 4. But there have been many other revolutionary achievements in artificial intelligence -- too many, in fact, to include all of them here.
+Here are some of the most notable:
+ChatGPT (and the GPTs)
+ChatGPT is an AI chatbot capable of natural language generation, translation, and answering questions. Though it's arguably the most popular AI tool, thanks to its widespread accessibility, OpenAI made significant waves in the world of artificial intelligence with the creation of GPTs 1, 2, and 3. 
+
+GPT stands for Generative Pre-trained Transformer, and GPT-3 was the largest language model in existence at the time of its 2020 launch, with 175 billion parameters. The latest version, GPT-4, accessible through ChatGPT Plus or Bing Chat, has one trillion parameters. 
+Self-driving cars
+Though the safety of self-driving cars is a top concern of potential users, the technology continues to advance and improve with breakthroughs in AI. These vehicles use machine-learning algorithms to combine data from sensors and cameras to perceive their surroundings and determine the best course of action. 
+
+Tesla's autopilot feature in its electric vehicles is probably what most people think of when considering self-driving cars, but Waymo, from Google's parent company, Alphabet, makes autonomous rides, like a taxi without a taxi driver, in San Francisco, CA, and Phoenix, AZ.
+Cruise is another robotaxi service, and auto companies like Apple, Audi, GM, and Ford are also presumably working on self-driving vehicle technology. 
+Robotics
+The achievements of Boston Dynamics stand out in the area of AI and robotics. Though we're still a long way away from creating AI at the level of technology seen in the moive Terminator, watching Boston Dyanmics' robots use AI to navigate and respond to different terrains is impressive. 
+DeepMind
+Google sister company DeepMind is an AI pioneer making strides toward the ultimate goal of artificial general intelligence (AGI). Though not there yet, the company initially made headlines in 2016 with AlphaGo, a system that beat a human professional Go player. 
+Since then, DeepMind has created a protein-folding prediction system, which can predict the complex 3D shapes of proteins, and it's developed programs that can diagnose eye diseases as effectively as the top doctors around the world.
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2AH - Keyframes on Hover</title>
+    <style>
+        body
+        {
+            background-image: url(Images/bodyimg.jpg);
+        }
+
+        h1
+        {
+            text-align: center;
+        }
+
+        #background
+        {
+            width: 900px;
+            height: 500px;
+            background-image: url(Images/oceanfloor.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 5px solid black;
+            position: relative;
+            margin: auto;
+        }
+
+        #seaweed
+        {
+            width: 300px;
+            height: 400px;
+            background-image: url(Images/seaweed.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            z-index: 2;
+        }
+        #seaweed:hover
+        {
+            animation-name: sway;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sway
+        {
+            from
+            {
+                transform: skewX(0deg);
+            }
+            to
+            {
+                transform: skewX(10deg);
+            }
+        }
+
+        #betafish
+        {
+            width: 150px;
+            height: 120px;
+            background-image: url(Images/betafish.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 90px;
+            right: 70px;
+            z-index: 1;
+        }
+        #betafish:hover
+        {
+            animation-name: hideinseaweed;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes hideinseaweed
+        {
+            from
+            {
+                transform: translate(0px, 0px);
+            }
+            to
+            {
+                transform: translate(-10px, 100px);
+            }
+        }
+
+        #neontetra
+        {
+            width: 150px;
+            height: 100px;
+            background-image: url(Images/neontetra.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 180px;
+        }
+        #neontetra:hover
+        {
+            animation-name: swim;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes swim
+        {
+            0%
+            {
+                transform: translate(0px, 0px);
+            }
+            50%
+            {
+                transform: translate(-100px, 100px);
+            }
+            100%
+            {
+                transform: translate(-200px, 0px) rotate(180deg);
+            }
+        }
+
+        #ramcichlid
+        {
+            width: 150px;
+            height: 100px;
+            background-image: url(Images/ramcichlid.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 100px;
+            right: 300px;
+        }
+        #ramcichlid:hover
+        {
+            animation-name: backfrontflips;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-direction: alternate;
+        }
+        @keyframes backfrontflips
+        {
+            from
+            {
+                transform: rotate(0deg);
+            }
+            to
+            {
+                transform: rotate(360deg) translate(10px, 10px);
+            }
+        }
+
+        #regaltang
+        {
+            width: 170px;
+            height: 150px;
+            background-image: url(Images/regaltang.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 150px;
+            top: 50px;
+        }
+        #regaltang:hover
+        {
+            animation-name: explodingfish;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+        @keyframes explodingfish
+        {
+            0%
+            {
+                transform: none;
+            }
+            50%
+            {
+                transform: skewX(80deg) scale(1.25);
+            }
+            100%
+            {
+                background-image: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>A029J3A2AH - Keyframes (from and to) on Hover</h1>
+    <div id="background">
+        <div id="seaweed"></div>
+        <div id="betafish"></div>
+        <div id="neontetra"></div>
+        <div id="ramcichlid"></div>
+        <div id="regaltang"></div>
+    </div>
+</body>
+</html>

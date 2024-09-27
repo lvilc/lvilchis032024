@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Numbers Generator</title>
+    <style>
+        body
+        {
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Numbers Generator</h1>
+
+
+
+    <script>
+        // Create variable to hold random numbers
+        var randomNum;
+
+        // randomNum = Math.random();
+        // randomNum = randomNum * 100; // Creates a random number from 0 to 99
+        // randomNum = Math.floor(randomNum); // Remove decimals 
+        // randomNum = randomNum +1; // Creates random number from 1 to 100
+
+        for(var i = 0; i < 900; i++)
+        {
+            randomNum = Math.floor(Math.random()*900) +1;
+            window.document.write(randomNum + " | ");
+        }
+
+        // Array
+
+        let selection=[];
+        selection[0] = "rock";
+        selection[1] = "paper";
+        selection[2] = "scissors"; 
+        // alert(selection);
+        let random = Math.floor(Math.random()*3);
+        alert(selection[random]);
+    </script>
+</body>
+</html>

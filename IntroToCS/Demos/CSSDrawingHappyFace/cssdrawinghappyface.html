@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Face</title>
+    <style>
+        #head
+        {
+            width: 500px;
+            height: 500px;
+            background-color:yellow;
+            border-radius: 50%;
+            border: 5px solid black;
+            position: relative;
+        }
+        #lefteye, #righteye
+        {
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        #mouth
+        {
+            background-color: none;
+            width: 300px;
+            height: 300px;
+            border-radius: 0 0 50% 50%;
+            border-bottom: 30px solid black;
+            position: absolute;
+            bottom: 75px;
+            left: 100px;
+        }
+        #lefteye
+        {
+            position: absolute;
+            top: 125px;
+            left: 100px;
+        }
+        #righteye
+        {
+            position: absolute;
+            top: 125px;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Face</h1>
+
+    <div id="head">
+        <div id="lefteye"></div>
+        <div id="righteye"></div>
+        <div id="mouth"></div>
+    </div>
+
+
+</body>
+</html>

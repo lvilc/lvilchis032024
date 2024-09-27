@@ -1,0 +1,9 @@
+Hear the term artificial intelligence (AI) and you might think of self-driving cars, robots, ChatGPT or other AI chatbots, and artificially created images. But it's also important to look behind the outputs of AI and understand how the technology works and its impacts for this and future generations.
+AI is a concept that has been around, formally, since the 1950s, when it was defined as a machine's ability to perform a task that would've previously required human intelligence. This is quite a broad definition and one that has been modified over decades of research and technological advancements.
+When you consider assigning intelligence to a machine, such as a computer, it makes sense to start by defining the term 'intelligence' -- especially when you want to determine if an artificial system is truly deserving of it. 
+Also: These experts are racing to protect AI from hackers
+Our level of intelligence sets us apart from other living beings and is essential to the human experience. Some experts define intelligence as the ability to adapt, solve problems, plan, improvise in new situations, and learn new things. 
+With intelligence sometimes seen as the foundation for human experience, it's perhaps no surprise that we'd try and recreate it artificially in scientific endeavors. 
+And today's AI systems might demonstrate some traits of human intelligence, including learning, problem-solving, perception, and even a limited spectrum of creativity and social intelligence. How can I use AI?
+AI comes in different forms that have become widely available in everyday life. The smart speakers on your mantle with Alexa or Google voice assistant built-in are two great examples of AI. Other good examples are popular AI chatbots, such as ChatGPT, the new Bing Chat, and Google Bard. 
+When you ask ChatGPT for the capital of a country or you ask Alexa to give you an update on the weather, you'll get responses that are the result of machine-learning algorithms.

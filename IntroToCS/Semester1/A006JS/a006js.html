@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A006JS</title>
+    <style>
+        pre
+        {
+            background-color: black;
+            padding: 30px;
+        }
+        #white
+        {
+            color: white;
+        }
+        #buttonholder
+        {
+            background-color: silver;
+            border: 1px solid black;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events and Functions</h1>
+    <h2>A006JS</h2>
+
+    <p>JavaScript is often utilized with events. Computer users interact with Web pages by clicking, double-clicking, dragging, and moving the mouse over various parts of the Web page. Your Web page elements can respond to what the user does by using events. In order to respond to the user's actions, you must set up a response to an event. Your page elements (links, documents, and table rows) have events such as:</p>
+
+    <ul>
+        <li><strong>click - </strong>The click event (when something is clicked)</li>
+        <li><strong>dblclick - </strong>The dblclick event (when something is clicked twice)</li>
+        <li><strong>focus - </strong>The focus event (when something receives the tab our mouse 'attention')</li>
+        <li><strong>resize - </strong>The resize event (when the browser is resized)</li>
+        <li><strong>unload - </strong>The unload event (when the page is unloaded - user leaves the page)</li>
+        <li><strong>mouseover - </strong>The mouseover event (when the mouse moves over something)</li>
+        <li><strong>mouseout - </strong>The mouseout event (when the mouse moves away from something after being over)</li>
+    </ul>
+
+    <p>Once an event is triggered, you will call a function (code snippet) to run your desired code. </p>   
+
+    <div id="codeblock">
+        <pre>
+            <code>
+                <span id="white">buttonOne.addEventListener('click', alertUser);</span>
+            </code>
+        </pre>
+    </div>
+
+    <div id="buttonholder">
+        <button id="btnOne">click</button>
+        <button id="btnTwo">dblclick</button>
+        <button id="btnThree">mouseover</button>
+    </div>
+
+    <script>
+        // Create variables and assign element
+        const buttonOne = window.document.querySelector('#btnOne');
+        const buttonTwo = window.document.querySelector('#btnTwo');
+        const buttonThree = window.document.querySelector('#btnThree');
+
+        // Add event handlers
+        buttonOne.addEventListener('click', theClick);
+        buttonTwo.addEventListener('dblclick', test);
+        buttonThree.addEventListener('mouseover', theMouseOver);
+
+        // The functions
+        function theClick()
+        {
+            window.alert('uno!');
+        }
+        function test()
+        {
+            window.alert('dos!');
+        }
+        function theMouseOver()
+        {
+            window.alert('tres!');
+        }
+    </script>
+</body>
+</html>

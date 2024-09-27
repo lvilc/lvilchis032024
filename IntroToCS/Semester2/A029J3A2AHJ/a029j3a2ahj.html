@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2AHJ - JavaScript Toggle Animation Class</title>
+    <style>
+        body
+        {
+            background-image: url(Images/table.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #wrapper
+        {
+            display: flex;
+            justify-content:center;
+        }
+        #toss
+        {
+            background-color: none;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 300px;
+        }
+        #coin
+        {
+            background-image: url(Images/coin.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 300px;
+            height: 290px;
+            position: absolute;
+            bottom: 0px;
+            left: 100px;
+        }
+        .tossthecoin
+        {
+            animation-name: flip;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: no;
+        }
+        @keyframes flip
+        {
+            0%
+            {
+                transform: rotate(0deg) skewY(0deg);
+            }
+            50%
+            {
+                top: -500px;
+                transform: rotate(720deg) skewY(65deg);
+            }
+            100%
+            {
+                transform: rotate(0deg) skewY(0deg);
+            }
+        } 
+    </style>
+</head>
+<body>
+        <div id="wrapper">
+        <div id="toss">
+            <div id="coin"></div>
+        </div>
+    </div>
+    <button type="button" onclick="addClass()">Toss The Coin</button>
+    <script>
+        let toss = window.document.querySelector('#toss');
+        function addClass()
+        {
+            toss.classList.toggle('tossthecoin');
+        }
+    </script>
+</body>
+</html>

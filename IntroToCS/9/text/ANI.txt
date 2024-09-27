@@ -1,0 +1,3 @@
+Artificial narrow intelligence (ANI) is crucial to voice assistants, such as Siri, Alexa, and Google Assistant. This category includes intelligent systems that have been designed or trained to carry out specific tasks or solve particular problems, without being explicitly designed to do so. 
+ANI might often be referred to as weak AI, as it doesn't possess general intelligence, but some examples of the power of narrow AI include the above voice assistants, and also image-recognition systems, technologies that respond to simple customer service requests, and tools that flag inappropriate content online. 
+ChatGPT is an example of ANI, as it is programmed to perform a specific task, which is to generate text responses to the prompts it is given.

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        body
+        {
+            background-color: #8e7d7c;
+            color: white;
+            font-family: verdana;
+        }
+        h1
+        {
+            background-color: #697173;
+            padding: 1rem;
+            text-align: center;
+            border: 1rem solid white;
+            font-size: 2rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 10%;
+        }
+        img
+        {
+            border-radius: 15%;
+            border: 1rem solid white;
+            display: block;
+            margin: auto;
+            max-width: 80%;
+            filter: grayscale(.90);
+        }
+        h2
+        {
+            background-color: #7b7271;
+            padding: 1rem;
+            border: .1rem solid silver;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        h3
+        {
+            background-color: #44323e;
+            padding: 1ren;
+            border: .1rem solid silver;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Web Design</h1>
+
+    <img src="Images/responsivewebdesign.gif" alt="Responsive Web Design">
+
+    <p>There are different approaches to creating responsive web pages.  One approach is called mobile first.  When designing mobile first, you focus on sketching and prototyping the smallest screen first and work your way up to desktop designs.  In mobile first design, the focus is in designing for a phone, then tablets, then desktop computers.  In reality, we design for any screen size along the way.</p>
+
+    <h2>Components of Responsive Web Design</h2>
+
+    <h3>Media Queries</h3>
+
+    <img src="Images/mediaqueries.png" alt="Media Queries">
+
+    <p>Media queries are a fairly new technology in Web Page Design.  They were introduced with CSS3.  With media queries, you can create different layouts based on the size of the viewport (browser window).  Media queries only apply styles when certain conditions are met.  Normally the conditions are the minimum or maximum width of the viewport.</p>  
+
+    <h3>Responsive Images</h3>
+
+    <img src="Images/responsiveimages.jpeg" alt="Responsive Images">
+
+    <p>Since we are designing for multiple screen sizes, it is a good idea to provide images based on the size of the viewport.  We can easily use the width or max-width property to make an image responsive based on the size of the viewport.  In addition, we can now use the new picture element to load different images based on the size of the viewport.</p>
+
+
+    <h3>Responsive Typography</h3>
+
+    <img src="Images/responsivetypography.jpg" alt="Responsive Typography">
+
+    <p>Responsive typography adjusts the font size of your text based on the size of the viewport.  Phones and tables have smaller viewports and therefore should, in many cases, have smaller font sizes.  We will use the rem unit to create relative font-sizes based on viewport size.</p>  
+
+    <h3>CSS Grid</h3>
+
+    <img src="Images/cssgrid.png" alt="CSS Grid">
+
+    <p>CSS Grid is a two-dimensional layout system for creating web pages.  It allows you to specify the number of columns and rows in your design.  More importantly it is well suited for responsive design because it automatically adapts to the size of the viewport.  When combined with media queries, it is a powerful and efficient way to create responsive designs.</p>
+
+    <h3>Flexbox</h3>
+
+    <img src="Images/flexbox.png" alt="Flexbox">
+
+    <p>Flexbox is a one-dimensional layout system for creating web pages.  You can chose to layout your flex items horizontally or vertically.  More importantly, it allows you to easily create responsive layouts that can easily be adjusted with media queries.  It is often used in basic layout designs.</p>
+</body>
+</html>

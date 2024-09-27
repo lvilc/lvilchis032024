@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A003JS</title>
+    <style>
+        span
+        {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>JavaScript Methods - document.write()</h1>
+    <h2>A003JS</h2>
+
+    <script>
+        // Use JavaScript to write to the document
+        // Use the write method of the document object
+    
+        window.document.write('<p id="highlight">I am using Javascript to write the opening to this page. This text has been created by using JavaScript window.document.write.</p>')
+        window.document.getElementById('highlight').style.backgroundColor = 'yellow';
+        window.document.getElementById('highlight').style.padding = '1rem';
+    </script>
+
+    <p>As you write your JavaScript code, please remember that JavaScript is not as forgiving as HTML. If you code something wrong, your Web page generates an error. Be patient and keep these things in mind when coding JavaScript:</p>
+<ul>
+    <li>JavaScript is case sensitive</li>
+    <li>JavaScript is white-space sensitive (enters matter!)</li>
+    <li>JavaScript is sensitive to apostrophes (or single quotes)</li>
+    <li>JavaScript lines should end with a semi-colon</li>
+</ul>
+<p>JavaScript is a scripting language that uses objects. For example, your browser window is an object. We can refer to this object via JavaScript by using "window."</p>
+
+<p>The browser window contains other objects, such as the document object. You can refer to the document object by using "window.object."</p>
+
+<p>The following is a method (action) of the document object. This method is called by using the following code:</p>
+
+<p>window.document.write();</p>
+
+<p>Here's the code to dynamically write the first two sentences of this Web page:</p>
+
+<pre>
+    &lt;script&gt;
+    <span>
+        // Use JavaScript to write to the document
+        // Use the write method of the document object
+    </span>
+
+    window.document.write("&lt;p id='highlight'&gt;I am using Javascript to write the opening to this page. This text has been created by using JavaScript window.document.write.&lt;/p&gt;");
+    &lt;/script&gt;
+</pre>
+</body>
+</html>

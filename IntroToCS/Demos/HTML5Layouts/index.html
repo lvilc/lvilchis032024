@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Six</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            background-color:#508c17;
+            padding-top: 150px;
+            font-family: "Poppins", sans-serif;
+        }
+        #wrapper
+        {
+            background-color: none;
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 50px;
+            padding-top: 120px;
+            display: grid;
+            grid-template-areas: 
+            "ph ph ph ph"
+            "ss ss ss ss"
+            "ln ma ma ma"
+            "ln s2 s3 s4"
+            "pf pf pf pf"
+            ;
+        }
+        #pageheader
+        {
+            background-color: #445451;
+            min-height: 100px;
+            text-align: center;
+            padding: 10px;
+            grid-area: ph;
+            /* position: relative; */
+        }
+        #headerh1
+        {   
+            font-size: 50px;
+            color: white;
+        }
+        #headerlogo
+        {
+            width: 150px;
+            height: 150px;
+            background-image: url(images-petAdoption/logo2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            padding: 10px;
+            border: 2px solid white;
+            margin: auto;
+            margin-top: -300px;
+        }
+        #slideshow
+        {
+            background-image: url(images-petAdoption/cat+dog/large/cat-dog.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 400px;
+            padding: 10px;
+            grid-area: ss;
+        }
+        #leftcolumnnav
+        {
+            background-color: #445451;
+            min-height: 400px;
+            padding: 10px;
+            grid-area: ln;
+        }
+        ul
+        {
+            list-style-type: none;
+            font-size: 20px;
+            font-family:'Times New Roman', Times, serif;
+            color: white;
+        }
+        a
+        {
+            color: white;
+        }
+        main
+        {
+            background-color: white;
+            min-height: 400px;
+            padding: 10px;
+            grid-area: ma;
+        }
+        main img{
+            display:block;
+            margin:auto;
+        }
+        #mainh1
+        {
+            text-align: center;
+        }
+        .cards
+        {
+            background-color: silver;
+            border: 2px solid grey;
+            min-height: 200px;
+            padding: 10px;
+        }
+        #section001
+        {
+            grid-area: s1;
+        }
+        #section002
+        {
+            grid-area: s2;
+        }
+        #section003
+        {
+            grid-area: s3;
+        }
+        #section004
+        {
+            grid-area: s4;
+        }
+        #pagefooter
+        {
+            background-color: grey;
+            min-height: 150px;
+            grid-area: pf;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="pageheader">
+            <h1 id="headerh1">Central Valley Pets</h1>
+            <div id="headerlogo"></div>
+        </header>
+        <div id="slideshow"></div>
+        <nav id="leftcolumnnav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adoptapet.html">Adopt a Pet</a></li>
+                <li><a href="adoptedpets.html">Adopted Pets</a></li>
+                <li><a href="testimonies.html">Testimonies</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1 id="mainh1">Welcome to Central Valley Pets</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat voluptatum ipsum quas laudantium deserunt sunt sed? Nesciunt, quisquam! Facere debitis eius recusandae consequuntur temporibus quam nobis libero commodi sint?</p>
+            <img src="images-petAdoption/cats/small/kitten.jpg"  width="400px" alt="kitten">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quam deserunt dignissimos in repellat nam animi nulla accusantium iste numquam, laborum aliquam amet tenetur tempore doloribus consequuntur veritatis eius! Adipisci.</p>
+        </main>
+
+        <section class="cards" id="section002">#section002</section>
+        <section class="cards" id="section003">#section003</section>
+        <section class="cards" id="section004">#section004</section>
+        <footer id="pagefooter">#pagefooter</footer>
+    </div>
+</body>
+</html>

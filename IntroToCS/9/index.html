@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body
+        {
+            background-color: #aebbcb;
+            margin-top: 150px;
+        }
+        div#wrapper
+        {
+            background-color: #53555b;
+            padding: 20px;
+            width: 70%;
+            min-height: 500px;
+            max-width: 1024px;
+            margin: auto;
+            display: grid;
+            grid-template-areas: 
+            "ph ph ph"
+            "me me me"
+            "ln ma ma"
+            "pf pf pf"
+            ;
+        }
+        header
+        {
+            background-color: #2e3b4d;
+            height: 170px;
+            grid-area: ph;
+        }
+        header h1
+        {
+            font-size: 75px;
+            text-align: center;
+            position: relative;
+            top: -150px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+        #headerlogo
+        {
+            width: 170px;
+            height: 170px;
+            background-image: url(Images/Ai\ logo.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: -100px;
+            margin: auto;
+        }
+        div#media
+        {
+            background-image:url(Images/artificial-intelligence.jpg);
+            min-height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-area: me;
+        }
+        #leftnav
+        {
+            min-height: 500px;
+            background-color: #86828d;
+            grid-area: ln;
+            padding: 20px;
+        }
+        nav ul
+        {
+            list-style-type: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        main
+        {
+            min-height: 500px;
+            background-color: white;
+            grid-area: ma;
+            padding: 10px;
+        }
+        main h1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        main img
+        {
+            display: block;
+            margin: auto;
+        }
+        #pagefooter
+        {
+            min-height: 90px;
+            background-color: #787787;
+            grid-area: pf;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+        nav a
+        {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header"> 
+            <div id="headerlogo"></div>
+            <h1>AI</h1>
+        </header>
+        <div id="media"></div>
+        <nav id="leftnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aiservices.html">AI Services</a></li>
+                <li><a href="ailearning.html">How AI Learns</a></li>
+                <li><a href="aiimpacts.html">AI Impacts</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <img src="Images/Businesswoman-Surrounded--009.JPG" width="400px" alt="Businesswoman surrounded by robots">
+            <p>
+                Artificial general intelligence (AGI), also known as strong AI, is still a hypothetical concept as it involves a machine understanding and performing vastly different tasks based on its accumulated experience. This type of intelligence is more on the level of human intellect, as AGI systems would be able to reason and think like a human.
+Also: AI's true goal may no longer be intelligence
+Like a human, AGI would potentially be able to understand any intellectual task, think abstractly, learn from its experiences, and use that knowledge to solve new problems. Essentially, we're talking about a system or machine capable of common sense, which is currently not achievable with any form of available AI.
+Developing a system with its own consciousness is still, presumably, a fair way in the distance, but it is the ultimate goal in AI research.
+
+            </p>
+        </main>
+        <footer id="pagefooter">
+            Career Skills Challenge 2024
+        </footer>
+
+
+    </div>
+</body>
+</html>

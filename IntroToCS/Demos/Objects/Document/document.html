@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object</title>
+</head>
+<body>
+
+    <h1 id="headerone">Document Object</h1>
+    <h2>Methods</h2>
+    <ul>
+        <li>write()</li>
+        <li>getElementById()</li>
+        <li>querySelector()</li>
+        <li>addEventListener()</li>
+    </ul>
+    <h2>Properties</h2>
+    <ul>
+        <li>title</li>
+        <li>lastModified</li>
+        <li>URL</li>
+    </ul>
+
+    <script>
+        // The document object
+        window.document.write('Hello World');
+        window.document.write('<br>');
+        window.document.write(window.document.title);
+        window.document.write('<br>');
+        window.document.write(window.document.lastModified);
+        window.document.write('<br>');
+        window.document.write(window.document.URL);
+
+        // Change the style of #headerone
+
+        window.document.getElementById('headerone').style.color="red";
+        window.document.querySelector('#headerone').style.backgroundColor="green"
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math - Multiplication For Loop</title>
+    <style>
+        table, th, td
+        {
+            border: 1px solid black;
+            padding: 1rem;
+        }
+        th
+        {
+            background-color: salmon;
+        }
+        tr:hover
+        {
+            background-color:yellow;
+        }
+        td:hover
+        {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Math - Multiplication For Loop</h1>
+
+    <script>
+        // create variable to capture multiplication range
+        let range;
+
+        // request the variable input
+        requestInput();
+        validateNumber();
+        buildTable();
+
+        // Functions
+        function requestInput() {
+            range = window.prompt('Enter the range to multiply')
+        }
+
+
+        function validateNumber() {
+            while( isNaN(range) || range < 1)
+            {
+                window.alert("Insert a vaild number.");
+                requestInput();
+            }
+        }
+
+
+        function buildTable() {
+            // Setup Table
+            window.document.write('<table>');
+            document.write('<tr>');
+            document.write('<th>x</th>');
+        // Create horizontal factors row (table headers)
+            for(let x = 1; x <= range; x++)
+            {
+            document.write("<th>" + x + '</th>');
+            }
+            document.write('</tr>')
+
+        // Create verticle factor column (table headers)
+            for(let i = 1; i <= range; i++)
+            {
+            document.write('<tr>');
+            document.write('<th>' + i + '</th>');
+
+        // Create horizontal product cells
+            for(let z = 1; z <= range; z++)
+            {
+                document.write('<td>' + i * z + '</td>');
+            }
+
+        // Close table row
+            document.write('</tr>');
+            }
+        }
+
+        // JavaScript Math
+        console.log('Hello World!');
+        console.log(2 + 2);
+        console.log(10 - 5);
+        console.log(5 * 5);
+        console.log(20 / 4);
+        console.log(2 ** 2);
+        console.log( isNaN('hi') );
+        console.log( isNaN('7') );
+        console.log( isNaN('dog'));
+    </script>
+</body>
+</html>

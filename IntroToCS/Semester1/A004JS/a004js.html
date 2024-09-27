@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Properties - URL, title, lastModified</title>
+    <style>
+        p#highlight
+        {
+            padding: 1.5rem;
+            background-color: yellow;
+        }
+        span
+        {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript - Displaying Document Properties</h1>
+    <h2>A004JS</h2>
+
+    <p>The following includes several properties of the window.<strong>document</strong>. object.</p>
+<ul>
+    <li>URL</li>
+    <li>title</li>
+    <li>lastModified</li>
+</ul>
+    <p>
+        These properties are referenced with the following code (using dot notation):
+    </p>
+
+    <p>
+        <strong>window.document.URL</strong> - This property gives the domain name and path on the server or computer
+    </p>
+    <p>
+        <strong>window.document.title</strong> - This property gives the title used on the Web page
+    </p>
+    <p>
+        <strong>window.document.lastModified</strong> - This property gives the date the Web page was last modified
+    </p>
+   
+
+    <p>Here are the window.document properties for this page:</p>
+
+    <script>
+        // Displaying document properties
+        window.document.write('<p id="highlight">');
+        window.document.write('<strong>URL:</strong> ' + window.document.URL + "<br>")
+        window.document.write('<strong>Title:</strong> ' + window.document.title + "<br>");
+        window.document.write('<strong>Last Modified:</strong> ' + window.document.lastModified)
+        window.document.write('</p>');
+    </script>
+
+        <p>
+            An important side note: The + symbol is used to join text together (it is called concatination)
+        </p>
+
+        <p>
+            Here's an example of using + (concatination) to join "URL:" and window.document.URL
+        </p>
+    
+        <p>
+            window.document.write("URL:" + window.document.URL);
+        </p>
+        <p>
+            Here's the code to <strong>display</strong> the document properties:
+        </p>
+
+<pre>
+    &lt;script&gt;
+    <span>
+    // Use the write method of the document to write properties
+    </span>
+    window.document.write('&lt;p id="highlight"&gt;');
+    window.document.write('&lt;strong&gt;URL:&lt;/strong&gt; ' + window.document.URL + "&lt;br&gt;")
+    window.document.write('&lt;strong&gt;Title:&lt;/strong&gt; ' + window.document.title + "&lt;br&gt;");
+    window.document.write('&lt;strong&gt;Last Modified:&lt;/strong&gt; ' + window.document.lastModified)
+    window.document.write('&lt;/p&gt;');
+
+    &lt;script&gt;
+</pre>
+</body>
+</html>

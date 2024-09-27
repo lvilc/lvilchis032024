@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        #wrapper{
+            border: 3px solid lightpink;
+            max-width: 1024px;
+            margin: auto;
+        }
+        div{
+            background-color: thistle;
+            min-height: 100px;
+            border: 1px solid black;
+        }
+        #flexbox001{
+            display:flex;
+        }
+        #one{
+            flex-basis: 50%;
+            background-color: darksalmon;
+        }
+        #two{
+            flex-basis: 50%;
+            background-color: snow;
+        }
+        #flexbox002{
+            display:flex;
+        }
+        #three{
+            flex-basis: 25%;
+            background-color: blueviolet;
+        }
+        #four{
+            flex-basis: 50%;
+            background-color:cornflowerblue;
+        }
+        #five{
+            flex-basis: 25%;
+            background-color: coral;
+        }
+        #flexbox003{
+            display:flex;
+        }
+        #six{
+            flex-basis: 25%;
+            background-color: lavenderblush;
+        }
+        #seven{
+            flex-basis: 25%;
+            background-color: aqua;
+        }
+        #eight{
+            flex-basis: 25%;
+            background-color: fuchsia;
+        }
+        #nine{
+            flex-basis: 25%;
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="flexbox001">
+            <div id="one">
+                one
+            </div>
+        <div id="two">
+            two
+        </div>
+        
+        </div>
+        <div id="flexbox002">
+            <div id="three">
+                three
+            </div>
+            <div id="four">
+                four
+            </div>
+            <div id="five"> 
+                five
+            </div>
+        </div>
+        <div id="flexbox003">
+            <div id="six">
+                six
+            </div>
+            <div id="seven">
+                seven
+            </div>
+            <div id="eight">
+                eight
+            </div>
+            <div id="nine">
+                nine
+            </div>
+        </div>
+    </div>
+    <!-- end the wrapper -->
+</body>
+</html>

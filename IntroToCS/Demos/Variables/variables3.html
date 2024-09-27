@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables - DOM Object, Events, Function</title>
+    <style>
+        div
+        {
+            width: 150px;
+            height: 150px;
+            border: 3px solid black;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Varibales - DOM Object, Event, Function</h1>
+
+    <div id="d1" onClick = "changeToRed()">#d1</div>
+    <div id="d2" onmouseover="changeToBlueBorder()">#d2</div>
+    <div id="d3" onclick="changeD3()">#d3</div>
+
+    <script>
+        // Call the function changeToRed
+        // changeToRed();
+
+        // Call the function changeToBlueBorder
+        // changeToBlueBorder();
+
+
+        // functions are code blocks that run when called
+
+        function changeToRed()
+        {
+            window.document.getElementById('d2').style.backgroundColor = 'red';
+            window.document.getElementById('d2').style.border = '5px solid magenta';
+        }
+
+        function changeToBlueBorder()
+        {
+            window.document.getElementById('d3').style.border = '5px solid blue';
+            window.document.getElementById('d3').style.backgroundColor = 'yellow';
+        }
+
+        function changeD3()
+        {
+            let myDiv3; // Create variable
+            myDiv3 = window.document.getElementById('d3');
+            //alert(myDiv3);
+
+            myDiv3.style.padding = "5rem";
+            myDiv3.style.color = "red";
+            myDiv3.style.transform = "scale(.25)";
+        }
+    </script>
+</body>
+</html>

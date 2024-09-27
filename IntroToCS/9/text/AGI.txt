@@ -1,0 +1,4 @@
+Artificial general intelligence (AGI), also known as strong AI, is still a hypothetical concept as it involves a machine understanding and performing vastly different tasks based on its accumulated experience. This type of intelligence is more on the level of human intellect, as AGI systems would be able to reason and think like a human.
+Also: AI's true goal may no longer be intelligence
+Like a human, AGI would potentially be able to understand any intellectual task, think abstractly, learn from its experiences, and use that knowledge to solve new problems. Essentially, we're talking about a system or machine capable of common sense, which is currently not achievable with any form of available AI.
+Developing a system with its own consciousness is still, presumably, a fair way in the distance, but it is the ultimate goal in AI research.

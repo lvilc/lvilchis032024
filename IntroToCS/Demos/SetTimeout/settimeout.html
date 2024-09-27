@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+        button
+        {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Set Timeout</h1>
+    <button id="btnSetTimeout">SetTimeout</button>
+    
+    <script>
+        // Create variable for button
+        let btnSetTimeout;
+        // Assign value to variable
+        btnSetTimeout = window.document.querySelector('#btnSetTimeout');
+
+        // Add event listener to the button
+        btnSetTimeout.addEventListener("click", callAlert);
+
+        // Build the function
+        function callAlert()
+        {
+            // Run function after so many milliseconds
+            setTimeout(displayAlert, 3000);
+        }
+
+        function displayAlert()
+        {
+            window.alert("Magic 8 Ball Message");
+        }
+    </script>
+</body>
+</html>

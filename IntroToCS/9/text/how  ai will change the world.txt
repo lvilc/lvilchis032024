@@ -1,0 +1,8 @@
+How will AI change the world?
+Artificial intelligence has the power to change the way we work, our health, how we consume media and get to work, our privacy, and more. 
+Consider the impact that certain AI systems can have on the world as a whole. People can ask a voice assistant on their phones to hail rides from autonomous cars to get them to work, where they can use AI tools to be more efficient than ever before.
+
+Doctors and radiologists could make cancer diagnoses using fewer resources, spot genetic sequences related to diseases, and identify molecules that could lead to more effective medications, potentially saving countless lives.
+Alternatively, it's worth considering the disruption that could result from having neural networks that can create realistic images, such as Dall-E 2, Midjourney, and Bing; that can replicate someone's voice or create deepfake videos using a person's resemblance. These could threaten what photos, videos, or audios people can consider genuine.
+Another ethical issue with AI concerns facial recognition and surveillance, and how this technology could be an intrusion on people's privacy, with many experts looking to ban it altogether.
+

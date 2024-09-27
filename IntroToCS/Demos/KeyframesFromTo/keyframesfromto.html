@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes From To</title>
+    <style>
+        div
+        {
+            width: 200px;
+            height: 200px;
+            background-color: lime;
+            margin-top: 20px;
+        }
+        #one
+        {
+            background-color: coral;
+            animation-name: scoot;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        #two
+        {
+            background-color: steelblue;
+            animation-name: jump;
+            animation-duration: .2s;
+            animation-iteration-count: infinite;
+        }
+        #three
+        {
+            background-color: lavender;
+            animation-name: change;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes scoot 
+        {
+            from
+            {
+                background-color: red;
+                margin-left: 0px;
+                transform: rotate(0deg);
+            }
+            to
+            {
+                background-color: blue;
+                margin-left: 120%;
+                transform: rotate(350deg);
+            }
+        }
+        @keyframes jump
+        {
+            from
+            {
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+            to
+            {
+                transform: translate(0px, -100px) rotate(720deg);
+            }
+        }
+        @keyframes change
+        {
+            from
+            {
+                width: 200px;
+            }
+            to
+            {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</body>
+</html>

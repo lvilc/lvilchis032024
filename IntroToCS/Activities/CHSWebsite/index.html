@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHS Website</title>
+    <style>
+        #wrapper
+        {
+            border: 5px solid black;
+            margin: auto;
+            width: 90%;
+            max-width: 1000px;
+            display: grid;
+            grid-template-areas:
+            "ph ph ph ph ph"
+            "pl pl pl pl pl"
+            "sl sl sl sl sl"
+            ". pa st bo ."
+            "mi mi mi mi mi"
+            "en en en en en"
+            ". ne ca tw ."
+            "sm sm sm sm sm"
+            "co co co co co"
+            ;
+            column-gap: 10px;
+        }
+        #pageheader
+        {
+            padding: 1rem;
+            background-color: aqua;
+            grid-area: ph;
+            min-height: 150px;
+        }
+        #pagelinks
+        {
+            padding: 1rem;
+            background-color: red;
+            grid-area: pl;
+        }
+        #slideshow
+        {
+            padding: 1rem;
+            background-color: blue;
+            min-height: 250px;
+            grid-area: sl;
+        }
+        #parents
+        {
+            padding: 1rem;
+            background-color: coral;
+            grid-area: pa;
+        }
+        #students
+        {
+            padding: 1rem;
+            background-color: yellow;
+            grid-area: st;
+        }
+        #board
+        {
+            padding: 1rem;
+            background-color: lightblue;
+            grid-area: bo;
+        }
+        #mission
+        {
+            padding: 1rem;
+            background-color: purple;
+            grid-area: mi;
+        }
+        #engage
+        {
+            padding: 1rem;
+            background-color: plum;
+            grid-area: en;
+        }
+        #news
+        {
+            padding: 1rem;
+            background-color: palegreen;
+            grid-area: ne;
+        }
+        #calendar
+        {
+            padding: 1rem;
+            background-color: lightslategray;
+            grid-area: ca;
+        }
+        #twitter
+        {
+            padding: 1rem;
+            background-color: seagreen;
+            grid-area: tw;
+        }
+        #socialmedia
+        {
+            padding: 1rem;
+            background-color: bisque;
+            grid-area: sm;
+        }
+        #contact
+        {
+            padding: 1rem;
+            background-color: steelblue;
+            grid-area: co;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+        <header id="pageheader">#pageheader</header>
+        <nav id="pagelinks">#pagelinks</nav>
+        <div id="slideshow">#slideshow</div>
+        <section id="parents">#parents</section>
+        <section id="students">#students</section>
+    
+        <section id="board">#borad</section>
+        <section id="mission">#mission</section>
+        <section id="engage">#engage</section>
+    
+        <section id="news">#news</section>
+        <section id="calendar">#calendar</section>
+        <section id="twitter">#twitter</section>
+        
+        <footer id="socialmedia">#socialmedia</footer>
+        <footer id="contact">#contact</footer>
+</div>
+
+</body>
+</html>

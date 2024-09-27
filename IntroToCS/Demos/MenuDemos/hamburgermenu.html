@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, p
+        {
+            padding: 1rem;
+        }
+        header#pageheader
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid silver;
+        }
+        img#hamburgermenu
+        {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+
+        nav#pagenav
+        {
+            background-color: lightblue;
+            padding: 1rem;
+            text-align: center;
+            display: none;
+        }
+
+        nav#pagenav>ul
+        {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            width: 40%;
+            margin: auto;
+        }
+
+        /* Modal Styling */
+        div#modalmenu
+        {
+            background-color: white;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+        img#closex
+        {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        #modalheader
+        {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1rem;
+            border-bottom: 1px solid silver;
+        }
+        nav#modalnav
+        {
+            line-height: 2;
+            padding: 1rem;
+            padding-top: 150px;
+        }
+
+        @media screen and (min-width:480px)
+        {
+            body
+            {
+                background-color: red;
+            }
+            img#hamburgermenu
+            {
+                display: none;
+            }
+            nav#pagenav
+            {
+                display: block;
+            }
+        }
+        @media screen and (min-width:768px)
+        {
+            body
+            {
+                background-color: blue;
+            }
+        }
+        </style>
+</head>
+<body>
+    <!-- Begin Modal Menu -->
+
+    <div id="modalmenu">
+        <header id="modalheader">
+            <h1>Hamburger Menu Links</h1>
+            <img src="Images/closex.png" alt="close x icon" id="closex">
+        </header>
+
+        
+        <nav id="modalnav">
+            <a href="https://chagoyan.com/">Chagoyan</a>
+            <br>
+            <a href="https://yahoo.com/">Yahoo</a>
+            <br>
+            <a href="https://google.com/">Google</a>
+            <br>
+        </nav>
+    </div>
+    <!-- End Modal Menu -->
+
+
+
+    <header id="pageheader">
+        <h1>Hamburger Menu</h1>
+        <img src="Images/hamburgermenu.png" alt="hamburger menu icon" id="hamburgermenu">
+    </header>
+
+    <nav id="pagenav">
+        <ul>
+            <li><a href="https://chagoyan.com">Chagoyan</a></li>
+            <li><a href="https://yahoo.com">Yahoo</a></li>
+            <li><a href="https://google.com">Google</a></li>
+        </ul>
+    </nav>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eveniet rerum? Enim adipisci ratione molestias necessitatibus, molestiae porro iusto ex nobis assumenda! Quaerat id in iure quo voluptate non nulla temporibus. Repellendus dicta ullam id at voluptatum temporibus ea assumenda quae aspernatur officia nemo quibusdam, magnam vel itaque suscipit enim ducimus possimus in non! Alias quae voluptatum saepe dicta cumque molestias odio, ducimus fuga? Dignissimos, alias dolore magnam saepe minus illum modi quo eligendi maiores dolorum cum sapiente sunt ratione.</p>
+
+    <script>
+        // Create variables for hamburger menu and set it to a value
+        const hamburgermenu = window.document.querySelector('#hamburgermenu');
+        // Make hamburgermenu interactive by adding a click event
+        hamburgermenu.addEventListener('click', showModalMenu);
+
+        function showModalMenu()
+        {
+            // Create and set variable for modalmenu
+            const displayModalMenu = window.document.querySelector('#modalmenu');
+            // Make modalmenu visible
+            displayModalMenu.style.display = "block";
+        }
+
+        // Create variable for closing x and set the value
+        const closeX = window.document.querySelector('#closex');
+        // Make closing x interactive by adding click value
+        closeX.addEventListener('click', closeModalMenu);
+
+        function closeModalMenu()
+        {
+            // Create and set variable for modalmenu
+            const hideModalMenu = window.document.querySelector('#modalmenu');
+            //Hide the modal menu
+            hideModalMenu.style.display = "none";
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body
+        {
+            background-color: #aebbcb;
+            margin-top: 150px;
+        }
+        div#wrapper
+        {
+            background-color: #53555b;
+            padding: 20px;
+            width: 70%;
+            min-height: 500px;
+            max-width: 1024px;
+            margin: auto;
+            display: grid;
+            grid-template-areas: 
+            "ph ph ph"
+            "me me me"
+            "ln ma ma"
+            "pf pf pf"
+            ;
+        }
+        header
+        {
+            background-color: #2e3b4d;
+            height: 170px;
+            grid-area: ph;
+        }
+        header h1
+        {
+            font-size: 75px;
+            text-align: center;
+            position: relative;
+            top: -150px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+        #headerlogo
+        {
+            width: 170px;
+            height: 170px;
+            background-image: url(Images/Ai\ logo.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: -100px;
+            margin: auto;
+        }
+        div#media
+        {
+            background-image:url(Images/artificial-intelligence.jpg);
+            min-height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-area: me;
+        }
+        #leftnav
+        {
+            min-height: 500px;
+            background-color: #86828d;
+            grid-area: ln;
+            padding: 20px;
+        }
+        nav ul
+        {
+            list-style-type: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        main
+        {
+            min-height: 500px;
+            background-color: white;
+            grid-area: ma;
+            padding: 10px;
+        }
+        main h1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        main img
+        {
+            display: block;
+            margin: auto;
+        }
+        #pagefooter
+        {
+            min-height: 90px;
+            background-color: #787787;
+            grid-area: pf;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+        nav a
+        {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header"> 
+            <div id="headerlogo"></div>
+            <h1>AI</h1>
+        </header>
+        <div id="media"></div>
+        <nav id="leftnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aiservices.html">AI Services</a></li>
+                <li><a href="ailearning.html">How AI Learns</a></li>
+                <li><a href="aiimpacts.html">AI Impacts</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <img src="Images/AI-terms-scaled.jpg" width="400px" alt="A Head As Blue Programming">
+            <p>
+                Machine Learning
+    The biggest quality that sets AI aside from other computer science topics is the ability to easily automate tasks by employing machine learning, which lets computers learn from different experiences rather than being explicitly programmed to perform each task. This capability is what many refer to as AI, but machine learning is actually a subset of artificial intelligence.
+    Machine learning involves a system being trained on large amounts of data, so it can learn from mistakes, and recognize patterns in order to accurately make predictions and decisions, whether they've been exposed to the specific data or not. 
+    
+            </p>
+    <p>Examples of machine learning include image and speech recognition, fraud protection, and more. One specific example is the image recognition system when users upload a photo to Facebook. The social media network can analyze the image and recognize faces, which leads to recommendations to tag different friends. With time and practice, the system hones this skill and learns to make more accurate recommendations.</p>
+
+
+        </main>
+        <footer id="pagefooter">
+            Career Skills Challenge 2024
+        </footer>
+
+
+    </div>
+</body>
+</html>

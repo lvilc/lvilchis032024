@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+    <style>
+        body
+        {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Window Objects</h1>
+    <h2>Methods (Actions)</h2>
+    <ul>
+        <li>prompt</li>
+        <li>alert</li>
+        <li>confirm</li>
+    </ul>
+    <h2>Properties (Descriptors)</h2>
+    <ul>
+        <li>location</li>
+        <li>innerWidth</li>
+        <li>innerHeight</li>
+    </ul>
+
+    <script>
+        // This is a JavaScript comment
+        // We are learning the Window Object
+
+        // Ask the user a question
+        // Window method
+        window.prompt('Type in your full name');
+        window.alert('Alert: You have a virus!');
+        window.confirm('Do you want to quit?');
+        //window.close(); // Closes the tab
+
+        // Window Properties
+        window.alert(window.location); // Show location
+        window.alert(window.innerWidth); // Show inner width of a window object
+
+        // Redirect User with window method and property
+        window.setTimeout(5000, (window.location = 'https://espn.com'));
+    </script>
+</body>
+</html>

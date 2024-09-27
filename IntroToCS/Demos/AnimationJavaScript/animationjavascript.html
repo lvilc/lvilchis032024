@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation JavaScript</title>
+    <style>
+        body
+        {
+            margin-top: 100px;
+            background-image: url(Images/space.jpg);
+        }
+        #wrapper
+        {
+            display: flex;
+            justify-content: center;
+        }
+        #orbit
+        {
+            height: 500px;
+            width: 500px;
+            background-color: none;
+            margin: 3rem;
+            position: relative;
+        }
+        #rocket
+        {
+            height: 150px;
+            width: 150px;
+            background-color: none;
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            background-image: url(Images/littlerocket.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .round
+        {
+            border-radius: 50%;
+        }
+        .animaterocket
+        {
+            animation-name: orbit;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes orbit
+        {
+            from
+            {
+                transform: rotate(0deg);
+            }
+            to
+            {
+                transform: rotate(360deg);
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="orbit">
+            <div id="rocket"></div>
+        </div>
+    </div>
+    <!-- end the wrapper -->
+
+    <button type="button" onclick="addClass()">toggle animation</button>
+    <script>
+        let orbit = window.document.querySelector('#orbit');
+        function addClass()
+        {
+            orbit.classList.toggle('animaterocket');
+        }
+    </script>
+</body>
+</html>

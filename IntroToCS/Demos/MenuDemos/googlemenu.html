@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map Modal</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, p
+        {
+            padding: 1rem;
+        }
+        header#pageheader
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid silver;
+        }
+        img#hamburgermenu
+        {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+
+        footer#pagefooter
+        {
+            display: flex;
+        }
+        img#locationpin
+        {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        /* Modal Styling */
+        div#modalmap
+        {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        #closex
+        {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        iframe
+        {
+            margin: auto;
+            display: block;
+            border: 2px solid white;
+            width: 75%;
+            aspect-ratio: 9/16;
+        }
+
+        @media screen and (min-width:480px)
+        {
+            body
+            {
+                background-color: red;
+            }
+            iframe
+            {
+                aspect-ratio: 1/1;
+            }
+        }
+        @media screen and (min-width:768px)
+        {
+            body
+            {
+                background-color: blue;
+            }
+            iframe
+                {
+                    aspect-ratio: 16/9;
+                }
+        }
+        </style>
+</head>
+<body>
+    <!-- Begin Modal Menu -->
+    <div id="modalmap">
+        <img src="Images/closex.png" alt="Close X" id="closex">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.193607148622!2d-120.36430092381022!3d36.137498972443495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80934343905e7ae3%3A0x909b5ef4b809de62!2sBaker%20Museum!5e0!3m2!1sen!2sus!4v1716226721056!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    </div>
+    <!-- End Modal Menu -->
+
+
+
+    <header id="pageheader">
+        <h1>Google Map Modal</h1>
+        <img src="Images/hamburgermenu.png" alt="hamburger menu icon" id="hamburgermenu">
+    </header>
+
+
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, eveniet rerum? Enim adipisci ratione molestias necessitatibus, molestiae porro iusto ex nobis assumenda! Quaerat id in iure quo voluptate non nulla temporibus. Repellendus dicta ullam id at voluptatum temporibus ea assumenda quae aspernatur officia nemo quibusdam, magnam vel itaque suscipit enim ducimus possimus in non! Alias quae voluptatum saepe dicta cumque molestias odio, ducimus fuga? Dignissimos, alias dolore magnam saepe minus illum modi quo eligendi maiores dolorum cum sapiente sunt ratione.</p>
+    </main>
+
+
+
+    <footer id="pagefooter">
+        <p>Location</p>
+        <img src="Images/locationicon.png" alt="location pin" id="locationpin">
+    </footer>
+
+
+    <script>
+        // Display
+        // Create a variable and assing at once
+        const locationPin = window.document.querySelector('#locationpin');
+        locationPin.addEventListener('click', displayModalMap);
+
+        function displayModalMap()
+        {
+            // Create a variable and assign at once
+            const showModalMap = window.document.querySelector('#modalmap');
+            showModalMap.style.display = "flex";
+        }
+
+        // Hide
+        // Create a variable and assign value
+        const closeMenu = window.document.querySelector('#closex');
+        closeMenu.addEventListener('click', closeModalMap);
+
+
+        // Hide the map with the escape key (esc which is keyCode 27)
+        window.document.addEventListener('keydown', function(e)
+    {
+        if(e.keyCode == 27)
+        {
+            closeModalMap();
+        }
+    }
+    );
+
+        function closeModalMap()
+        {
+            const closeModal = window.document.querySelector('#modalmap');
+            closeModal.style.display = "none";
+        }
+
+
+
+    </script>
+</body>
+</html>

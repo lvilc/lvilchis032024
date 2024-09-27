@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A030CAS - Custom - Animated Scene From To</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-image: url(Images/bedroom.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #monkey{
+            background-image: url(Images/image_processing20220420-11036-1h3mbmm.png);
+            width: 228px;
+            height: 300px;
+            margin-left: 30rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation-name: spin;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(720deg);
+            }
+        }
+        #monkeycontainer{
+            width: 430px;
+            height: 500px;
+            animation-name: jumping;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes jumping{
+
+            from{
+                margin-top: -200px;
+            }
+            to{
+                margin-top:9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>A030CAS - Custom - Animated Scene (From To)</h1>
+    <div id="monkeycontainer">
+        <div id="monkey"></div>
+    </div>
+</body>
+</html>
