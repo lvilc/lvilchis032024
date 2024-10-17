@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Exploration</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+
+        #canvas
+        {
+            border: 2px solid black;
+            margin: auto;
+            display: block;
+        }
+        #buttonholder
+        {
+            background-color: none;
+            width: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        button
+        {
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas Exploration 2</h1>
+    <canvas id="canvas">
+
+    </canvas>
+    <div id="buttonholder">
+        <button id="createline">
+            Create Line
+        </button>
+        <button id="createrectangle">
+            Create Rectangle
+        </button>
+        <button id="createshape">
+            Create Shape
+        </button>
+        <button id="createarc">
+            Create Arc
+        </button>
+        <button id="createstar">
+            Create Star
+        </button>
+        <button id="undodraw">
+            Undo Draw
+        </button>
+    </div>
+
+    <script>
+        // Create variables
+
+        const canvas = window.document.querySelector('#canvas');
+        // window.alert(canvas);
+
+        // Give canvas drawing powers
+        const ctx = canvas.getContext('2d');
+
+        // Configure canvas
+        canvas.width = 400;
+        canvas.height = 400;
+        canvas.style.backgroundColor = "aliceblue";
+
+        // create line
+        // add event listeners
+        // create variable for buttons
+        const btnCreateLine = window.document.querySelector('#createline');
+        btnCreateLine.style.backgroundColor = "lightcoral";
+        btnCreateLine.addEventListener('click', function () {
+            window.alert('Create Line')
+        });
+
+        // Create Rectangle
+        const btnCreateRectangle = window.document.querySelector('#createrectangle');
+        btnCreateRectangle.style.backgroundColor = "lightsalmon";
+        btnCreateRectangle.addEventListener('click', function () {
+            window.alert('Create Rectangle')
+        });
+
+        // Create Shape
+        const btnCreateShape = window.document.querySelector('#createshape');
+        btnCreateShape.style.backgroundColor = "lemonchiffon";
+        btnCreateShape.addEventListener('click', function () {
+            window.alert('Create Shape')
+        });
+
+        // Create Arc
+        const btnCreateArc = window.document.querySelector('#createarc');
+        btnCreateArc.style.backgroundColor = "lightgreen";
+        btnCreateArc.addEventListener('click', function () {
+            window.alert('Create Arc')
+        });
+
+        // Create Star
+        const btnCreateStar = window.document.querySelector('#createstar');
+        btnCreateStar.style.backgroundColor = "lightblue";
+        btnCreateStar.addEventListener('click', function () {
+            window.alert('Create Star')
+        });
+
+        // Undo Drawing
+        const btnUndoDraw = window.document.querySelector('#undodraw');
+        btnUndoDraw.style.backgroundColor = "mediumpurple";
+        btnUndoDraw.addEventListener('click', function () {
+            window.alert('Undo Draw')
+        });
+    </script>
+</body>
+</html>

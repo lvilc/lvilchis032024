@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Smiley Face</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas Smiley Face</h1>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = window.document.querySelector('#canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = 450;
+        canvas.height = 450;
+        canvas.style.border = '2px solid black';
+        canvas.style.backgroundColor = "black";
+        canvas.style.display = 'block';
+        canvas.style.margin = 'auto';
+
+        ctx.strokeStyle = "yellow";
+        ctx.fillStyle = 'yellow';
+        ctx.lineWidth =  5;
+        ctx.beginPath();
+        ctx.arc(225, 225, 200, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'white';
+        ctx.lineWidth =  50;
+        ctx.beginPath();
+        ctx.arc(225, 245, 125, 0, Math.PI)
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'black';
+        ctx.lineWidth =  10;
+        ctx.beginPath();
+        ctx.arc(300, 150, 25, 0, Math.PI * 2)
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'black';
+        ctx.lineWidth =  10;
+        ctx.beginPath();
+        ctx.arc(150, 150, 25, 0, Math.PI * 2)
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+    </script>
+</body>
+</html>

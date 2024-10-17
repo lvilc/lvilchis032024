@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PrismJS - Lissandra Vilchis</title>
+		<link rel="stylesheet" href="CSS/styles.css">
+		<link rel="stylesheet" href="CSS/prism.css">
+	</head>
+	<body>
+		<h1>PrismJS3</h1>
+		<h2>Random Number Between 1 and 100</h2>
+<pre class="line-numbers" data-line="5">
+<code class="language-javascript">
+	// Change the text in the tab (title tag change)
+	window.document.title = 'Using Prism to Generate a Random Number ';
+	
+	// Print the random number
+	// Create variable
+	let randomNumber;
+	
+	// Assign variable a value - random number between 1 and 100
+	randomNumber = Math.floor(Math.random() * 100) + 1;
+	
+	// Write to the document
+	window.document.write('&lt;h3&gt;' + randomNumber + '&lt;/h3&gt;');
+	
+	window.document.write(
+		'&lt;p&gt;Refresh you browser to generate a random number between 1 and 100.&lt;/p&gt;'
+	);
+</code></pre>
+
+		<script src="Scripts/scripts.js"></script>
+		<script src="Scripts/prism.js"></script>
+	</body>
+</html>
