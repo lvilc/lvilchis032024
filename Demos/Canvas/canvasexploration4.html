@@ -149,7 +149,17 @@
         const btnCreateArc = window.document.querySelector('#createarc');
         btnCreateArc.style.backgroundColor = "lightgreen";
         btnCreateArc.addEventListener('click', function () {
-            window.alert('Create Arc')
+            // window.alert('Create Arc')
+            // Create arc
+            ctx.strokeStyle = 'lightgreen';
+
+            ctx.lineWidth = 3;
+
+            // Draw Arc
+            ctx.beginPath();
+            ctx.arc(150, 100, 75, 0, Math.PI, true)
+            ctx.stroke();
+            ctx.closePath();
         });
 
         // Create Star

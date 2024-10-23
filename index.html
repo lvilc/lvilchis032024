@@ -94,7 +94,7 @@
         {
             background-color: none;
             min-height: 40px;
-            width: 300px;
+            width: 400px;
             display: flex;
             align-content: center;
             justify-content: space-evenly;
@@ -138,11 +138,16 @@
         #media blockquote
         {
             background-color:none;
-            max-width: 50%;
             margin: auto;
+            padding: 10px;
             color: var(--color-quinary);
         }
-
+        #quote
+        {
+            background-color: #ffed2438;
+            max-width: 60%;
+            margin: auto;
+        }
         #career
         {
             min-height: 200px;
@@ -154,6 +159,12 @@
         {
             min-height: 200px;
             background-color: var(--color-quaternary);
+            padding: 1rem;
+        }
+        #keyassignments
+        {
+            min-height: 200px;
+            background-color: var(--color-tertiary);
             padding: 1rem;
         }
 
@@ -192,17 +203,28 @@
             background-color:var(--color-quinary);
             padding: 1rem;
         }
+        .footerlinks
+        {
+            display:none;
+        }
         #top
         {
-            width: 20px;
-            height: 20px;
-            background-color: ghostwhite;
+            width: 25px;
+            height: 25px;
+            background-color: none;
+            background-image: url(Images/Ferrari-Emblem.png);
+            background-size: cover;
+            background-position: center;
             padding: 1rem;
             text-align: center;
             position: fixed;
             right: 20px;
             bottom: 20px;
             border-radius: 50%;
+        }
+        #top a
+        {
+            color: var(--color-tertiary);
         }
         /* iframe
         {
@@ -239,6 +261,16 @@
             #media
             {
                 height: 350px;
+            }
+            .footerlinks
+            {
+                display: block;
+                min-width: 200px;
+            }
+            #flexsubfooter
+            {
+                display: flex;
+                justify-content: space-between;
             }
         }
 
@@ -297,7 +329,8 @@
                 <nav id="pagenav">
                     <a href="#career">Career</a>  
                     <a href="#semester1">Semester 1</a> 
-                    <a href="#semester2">Semester 2</a>
+                    <!-- <a href="#semester2">Semester 2</a> -->
+                    <a href="#keyassignments">Key Assignments</a>
                 </nav>
             </div>
     
@@ -309,11 +342,13 @@
         <section id="media">
             <h1>Lissandra Vilchis</h1>
             <h2>Portfolio</h2>
-            <blockquote>
-                When you drive it is you, the car and your performance on track that counts. That is why I do it.
-            </blockquote>
-            <br>
-            <blockquote>- Carlos Sainz Jr.</blockquote>
+            <div id="quote">
+                <blockquote>
+                    When you drive it is you, the car and your performance on track that counts. That is why I do it. <br> 
+                    <br>
+                    - Carlos Sainz
+                </blockquote>
+            </div>
             <!-- <iframe src="https://www.youtube.com/embed/8TmrPvoHSGQ?si=bv0T4VsHRFBxDXls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
     
         </section>
@@ -363,6 +398,7 @@
                     <li>A002</li>
                     <li>A003</li>
                     <li>A004</li>
+                    <li><a href="Activities/CanvasSmileyFace/canvassmileyface.html">Canvas Smiley Face</a></li>
                 </ul>
             </div>
     
@@ -382,10 +418,22 @@
                     <li>A004</li>
                 </ul>
             </div>
-    
+            
         </section>
         <!-- end semesters -->
-    
+        
+        <!-- begin keyassignments -->
+        <div id="keyassignments">
+            
+            <div class="container">
+                <a name="keyassignments"></a>
+                <h2>Key Assignments</h2>
+                <p>Welcome to my Portfolio! My name is Lissandra Vilchis and I've been taking a webpage class for 3 years. I recently started enjoying motorsports, hence my theme and my free time is spent with my cats and listening to random songs I find or vinyls with my mom. So far, I've been intrested in persuing a career in the computer science field so I hope to improve my skills.</p>
+            </div>
+            
+        </div>
+        <!-- end pagecontent -->
+
         <!-- begin pagefooter -->
         <footer id="pagefooter">
     
@@ -406,7 +454,26 @@
         <!-- begin subpagefooter -->
         <footer id="subpagefooter">
     
-            <div class="container">subpagefooter</div>
+            <div class="container">
+                <!-- <h2>subpagefooter</h2> -->
+                <div id="flexsubfooter">
+                    <div class="quote">
+                        <h3>Final Thoughts</h3>
+                        <blockquote>To grow you must understand and admit your mistakes, it is an approach that works for me, it is not necessarily the same for everyone.</blockquote>
+                        <p>- Charles Leclerc</p>
+                    </div>
+    
+                    <div class="footerlinks">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="#career">Career</a></li>
+                            <li><a href="#semester1">Semester 1</a></li>
+                            <!-- <li><a href="#semester2">Semester 2</a></li> -->
+                            <li><a href="#keyassignments">Key Assignments</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     
         </footer>
         <!-- end subpagefooter -->
