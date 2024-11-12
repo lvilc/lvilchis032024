@@ -31,6 +31,106 @@
       // Create variables
       const canvas = window.document.querySelector('#canvas');
       const ctx = canvas.getContext('2d');
+      ctx.strokeStyle = 'black';
+      ctx.fillStyle = 'lime';
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.arc(500, 70, 60, 0, Math.PI * 2)
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.fillStyle = 'black';
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.arc(450, 70, 10, 0, Math.PI * 2)
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+      
+      ctx.strokeStyle = 'black';
+      ctx.fillStyle = 'black';
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.arc(550, 70, 10, 0, Math.PI * 2)
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+      
+      ctx.strokeStyle = 'black';
+      ctx.fillStyle = 'lime';
+      ctx.lineCap = "round";
+      ctx.lineJoin = "miter";
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.moveTo(475, 400);
+      ctx.lineTo(500, 465);
+      ctx.lineTo(525, 400);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.strokeStyle = 'black';
+      ctx.fillStyle = 'lime';
+      ctx.lineCap = "round";
+      ctx.lineJoin = "miter";
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.moveTo(457, 150);
+      ctx.lineTo(275, 70);
+      ctx.lineTo(420, 200);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineCap = "round";
+      ctx.lineJoin = "miter";
+      ctx.fillStyle = 'lime';
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.moveTo(543, 150);
+      ctx.lineTo(725, 70);
+      ctx.lineTo(580, 200);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      
+      ctx.strokeStyle = 'black';
+      ctx.fillStyle = 'lime';
+      ctx.lineCap = "round";
+      ctx.lineJoin = "miter";
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.moveTo(590, 350);
+      ctx.lineTo(725, 450);
+      ctx.lineTo(550, 400);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      
+      ctx.strokeStyle = 'black';
+      ctx.fillStyle = 'lime';
+      ctx.lineCap = "round";
+      ctx.lineJoin = "miter";
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.moveTo(410, 350);
+      ctx.lineTo(275, 450);
+      ctx.lineTo(450, 400);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+      
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 5;
+      ctx.fillStyle = 'darkgreen';
+      ctx.beginPath();
+      ctx.ellipse(500, 280, 150, 100, Math.PI / 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
     </script>
   </body>
 </html>

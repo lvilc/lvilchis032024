@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Exploration</title>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+
+        #canvas
+        {
+            border: 2px solid black;
+            margin: auto;
+            display: block;
+        }
+        #buttonholder
+        {
+            background-color: none;
+            width: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        button
+        {
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas Exploration 5</h1>
+    <canvas id="canvas">
+
+    </canvas>
+    <div id="buttonholder">
+        <button id="createline">
+            Create Line
+        </button>
+        <button id="createrectangle">
+            Create Rectangle
+        </button>
+        <button id="createtriangle">
+            Create Triangle
+        </button>
+        <button id="createarc">
+            Create Arc
+        </button>
+        <button id="createstar">
+            Create Star
+        </button>
+        <!-- <button id="undodraw">
+            Undo Draw
+        </button> -->
+        <button id="clear">
+            Clear
+        </button>
+    </div>
+
+    <script>
+        // Create variables
+
+        const canvas = window.document.querySelector('#canvas');
+        // window.alert(canvas);
+
+        // Give canvas drawing powers
+        const ctx = canvas.getContext('2d');
+
+        // Configure canvas
+        canvas.width = 400;
+        canvas.height = 400;
+        canvas.style.backgroundColor = "aliceblue";
+
+        // add event listeners
+        // create variable for buttons
+        // create line -> style
+        const btnCreateLine = window.document.querySelector('#createline');
+        btnCreateLine.style.backgroundColor = "lightcoral";
+        // event 
+        btnCreateLine.addEventListener('click', function () {
+            // window.alert('Create Line')
+            // Select a line style - color
+            ctx.strokeStyle = "lightcoral";
+            ctx.lineWidth = 15;
+            ctx.lineCap = "round"; // Butt or round or square
+            ctx.lineJoin = "miter"; // bevel or miter or round
+
+            // Draw the line
+            ctx.beginPath();
+            ctx.moveTo(15, 15);
+            ctx.lineTo(200, 200);
+            ctx.lineTo(15, 385);
+            ctx.stroke();
+        });
+
+        // Create Rectangle -> Style
+        const btnCreateRectangle = window.document.querySelector('#createrectangle');
+        btnCreateRectangle.style.backgroundColor = "lightsalmon";
+
+        // Event
+        btnCreateRectangle.addEventListener('click', function () {
+            // window.alert('Create Rectangle')
+            // Create Rectangle
+            ctx.strokeStyle = "white";
+            ctx.fillStyle = "lightsalmon";
+            ctx.lineWidth = 5;
+            ctx.lineCap = "square";
+            ctx.lineJoin = "miter";
+
+            // Draw Rectangle
+            ctx.beginPath();
+            ctx.moveTo(10, 10);
+            ctx.lineTo(200, 10);
+            ctx.lineTo(200, 200);
+            ctx.lineTo(10, 200);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+        });
+
+        // Create Shape
+        // Style
+        const btnCreateTriangle = window.document.querySelector('#createtriangle');
+        btnCreateTriangle.style.backgroundColor = "lemonchiffon";
+
+        // Event
+        btnCreateTriangle.addEventListener('click', function () {
+            // window.alert('Create Triangle')
+            // Create triangle
+            ctx.strokeStyle = "white";
+            ctx.fillStyle = "lemonchiffon";
+            ctx.lineWidth = 5;
+            ctx.lineCap = "round";
+            ctx.lineJoin = "miter";
+
+            //  Start the drawing (draw lines)
+            ctx.beginPath();
+            ctx.moveTo(200, 200);
+            ctx.lineTo(10, 200);
+            ctx.lineTo(200, 10);
+            ctx.lineTo(390, 200);
+            // ctx.lineTo(200, 200);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fill();
+        });
+
+        // Create Arc
+        const btnCreateArc = window.document.querySelector('#createarc');
+        btnCreateArc.style.backgroundColor = "lightgreen";
+        btnCreateArc.addEventListener('click', function () {
+            // window.alert('Create Arc')
+            // Create arc
+            ctx.strokeStyle = 'lightgreen';
+
+            ctx.lineWidth = 3;
+
+            // Draw Arc
+            ctx.beginPath();
+            ctx.arc(150, 100, 75, 0, Math.PI, true)
+            ctx.stroke();
+            ctx.closePath();
+        });
+
+        // Create Star
+        const btnCreateStar = window.document.querySelector('#createstar');
+        btnCreateStar.style.backgroundColor = "lightblue";
+        btnCreateStar.addEventListener('click', function () {
+            // window.alert('Create Star')
+            // Create Star
+            ctx.strokeStyle = "white";
+            ctx.fillStyle = "lightblue";
+            ctx.lineWidth = 5;
+            ctx.lineCap = "square";
+            ctx.lineJoin = "miter";
+
+            // Draw star
+            ctx.beginPath();
+            ctx.moveTo(200, 45);
+            ctx.lineTo(150, 160);
+            ctx.lineTo(25, 145);
+            ctx.lineTo(125, 245);
+            ctx.lineTo(85, 360);
+            ctx.lineTo(200, 265);
+            ctx.lineTo(315, 360);
+            ctx.lineTo(265, 245);
+            ctx.lineTo(375, 145);
+            ctx.lineTo(250, 160);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+        });
+
+        // Undo Drawing
+        // const btnUndoDraw = window.document.querySelector('#undodraw');
+        // btnUndoDraw.style.backgroundColor = "mediumpurple";
+        // btnUndoDraw.addEventListener('click', function () {
+        //     window.alert('Undo Draw')
+        // });
+
+        // Clear
+        const btnClear = window.document.querySelector('#clear');
+        btnClear.style.backgroundColor = "lightpink";
+        btnClear.addEventListener('click', function () {
+            // window.alert('Clear')
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+    </script>
+</body>
+</html>

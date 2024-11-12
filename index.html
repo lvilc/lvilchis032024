@@ -94,14 +94,14 @@
         {
             background-color: none;
             min-height: 40px;
-            width: 400px;
+            min-width: 400px;
             display: flex;
             align-content: center;
             justify-content: space-evenly;
             margin: auto;
             position: absolute;
             bottom: -10px;
-            left: calc(50% - 150px);
+            left: calc(50% - 200px);
         }
 
         #pagenav a
@@ -118,7 +118,7 @@
         #media
         {
             min-height: 200px;
-            background-image: url(Images/mediacarbonfiberpic.webp);
+            background-image: url(Images/mediacarbonfiberpic.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
             color: white;
@@ -148,11 +148,20 @@
             max-width: 60%;
             margin: auto;
         }
+        button
+        {
+            display: none;
+        }
         #career
         {
             min-height: 200px;
             background-color: var(--color-quaternary);
             padding: 1rem;
+        }
+
+        #career a
+        {
+            color: var(--color-quinary);
         }
 
         #pagecontent
@@ -176,6 +185,11 @@
             padding: 1rem;
         }
 
+        #semester1 a
+        {
+            color: var(--color-quinary);
+        }
+
         #semester2
         {
             min-height: 200px;
@@ -190,6 +204,11 @@
             background-color: var(--color-quinary);
             padding: 1rem;
             text-align: center;
+        }
+
+        #pagefooter a
+        {
+            color: var(--color-quaternary);
         }
 
         #pagefooter .container
@@ -287,7 +306,8 @@
             #media
             {
                 height: 450px;
-                background-image: url(Images/mediacarbonfiberpic.webp);
+                background-image: url(Images/media.jpg);
+                position: relative;
             }
             #pagenav
             {
@@ -299,6 +319,14 @@
             #pagenav .container
             {
                 
+            }
+
+            button
+            {
+                display: block;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
             }
         }
 
@@ -350,6 +378,7 @@
                 </blockquote>
             </div>
             <!-- <iframe src="https://www.youtube.com/embed/8TmrPvoHSGQ?si=bv0T4VsHRFBxDXls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <button id="virus" onclick="audio.play()">click me for a virus</button>
     
         </section>
         <!-- end media -->
@@ -374,11 +403,11 @@
                 <a name="career"></a>
                 <h2>Career</h2>
                 <ul>
-                    <li>Letter of Introduction</li>
-                    <li>Resume</li>
-                    <li>References</li>
-                    <li>Job Application</li>
-                    <li>Career Plan</li>
+                    <li><a target="_blank" href="Images/TemplateLetterofIntroduction.pdf">Letter of Introduction</a></li>
+                    <li><a target="_blank" href="Images/TemplateResume.pdf">Resume</a></li>
+                    <li><a target="_blank" href="Images/TemplateReferences.pdf">References</a></li>
+                    <li><a target="_blank" href="Images/SampleApplication.pdf">Job Application</a></li>
+                    <li><a target="_blank" href="Images/TemplateCareerActionPlan.pdf">Career Plan</a></li>
                     <li>Work Samples</li>
                     <li>Certificates</li>
                 </ul>
@@ -394,11 +423,8 @@
                 <a name="semester2"></a>
                 <h2>Semester 1</h2>
                 <ul>
-                    <li>A001</li>
-                    <li>A002</li>
-                    <li>A003</li>
-                    <li>A004</li>
-                    <li><a href="Activities/CanvasSmileyFace/canvassmileyface.html">Canvas Smiley Face</a></li>
+                    <li><a target="_blank" href="Activities/CanvasSmileyFace/canvassmileyface.html">Canvas Smiley Face</a></li>
+                    <li><a target="_blank" href="Activities/CanvasDrawing1/canvsadrawing.html">Canvas Drawing 1</a></li>
                 </ul>
             </div>
     
@@ -438,14 +464,14 @@
         <footer id="pagefooter">
     
             <div class="container">
-                <a href="https://www.chsserver01.org/" target="new">chago</a> | 
-                <a href="https://chsserver01.org/chaggy.net/colortheory/colorscheme2/index-en.html" target="new">color schemes</a> | 
-                <a href="https://coalingahuron.aeries.net/" target="new">aeries</a> | 
-                <a href="https://chs.chusd.org/o/chs" target="new">chs</a> | 
-                <a href="https://mycareertech.com/">mycareertech</a> | 
-                <a href="https://classroom.google.com/u/0/" target="new">classroom</a> | 
-                <a href="https://codepip.com/login/" target="new">codepip</a> | 
-                <a href="https://minga.io/" target="new">minga</a>
+                <a target="_blank" href="https://www.chsserver01.org/" target="new">chago</a> | 
+                <a target="_blank" href="https://chsserver01.org/chaggy.net/colortheory/colorscheme2/index-en.html" target="new">color schemes</a> | 
+                <a target="_blank" href="https://coalingahuron.aeries.net/" target="new">aeries</a> | 
+                <a target="_blank" href="https://chs.chusd.org/o/chs" target="new">chs</a> | 
+                <a target="_blank" href="https://mycareertech.com/">mycareertech</a> | 
+                <a target="_blank" href="https://classroom.google.com/u/0/" target="new">classroom</a> | 
+                <a target="_blank" href="https://codepip.com/login/" target="new">codepip</a> | 
+                <a target="_blank" href="https://minga.io/" target="new">minga</a>
             </div>
     
         </footer>
@@ -480,5 +506,20 @@
         
     </div>
     <div id="top"><a href="#topanchor">top</a></div>
+
+    <script>
+        let audio = new Audio("Audio/smoothoperator.mp3");
+        const buttons = document.querySelector("virus");
+
+        button.addEventListener("click", smoooothOperator);
+        function smoooothOperator(){
+            audio.play();
+        }
+        audio.addEventListener('ended', function()
+    {
+        audio.currentTime = 0;
+        audio.play();
+    })
+    </script>
 </body>
 </html>
