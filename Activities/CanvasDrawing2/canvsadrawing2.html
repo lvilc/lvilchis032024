@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 50px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #canvas {
+        margin: auto;
+        display: block;
+        border: 1px solid silver;
+        background-color:lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas" width="1000px" height="500px"></canvas>
+
+    <script>
+      // Create variables
+      const canvas = window.document.querySelector('#canvas');
+      const ctx = canvas.getContext('2d');
+
+      ctx.strokeStyle = 'grey';
+      ctx.lineWidth = 10;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.ellipse(520, 290, 110, 80, Math.PI / 2, 4, 2 * Math.PI);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.ellipse(525, 290, 110, 80, Math.PI / 2, 3.96, 2 * Math.PI);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.ellipse(515, 290, 110, 80, Math.PI / 2, 4, 2 * Math.PI);
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.ellipse(580, 220, 6, 5, Math.PI / 1.4, 1.35, 2.85);
+      ctx.stroke();
+      ctx.closePath();
+      
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.ellipse(500, 300, 110, 80, Math.PI / 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.ellipse(445, 370, 45, 17, Math.PI / 2.8, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.ellipse(555, 370, 45, 17, Math.PI / -2.8, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.arc(500, 150, 60, 0, Math.PI * 2,)
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.moveTo(470, 100);
+      ctx.lineTo(449, 50);
+      ctx.lineTo(446, 125);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = .01;
+      ctx.fillStyle = 'lightgrey';
+      ctx.beginPath();
+      ctx.moveTo(465, 100);
+      ctx.lineTo(451, 60);
+      ctx.lineTo(451, 120);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.moveTo(530, 100);
+      ctx.lineTo(551, 50);
+      ctx.lineTo(554, 125);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = .01;
+      ctx.fillStyle = 'lightgrey';
+      ctx.beginPath();
+      ctx.moveTo(535, 100);
+      ctx.lineTo(549, 60);
+      ctx.lineTo(549, 120);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.ellipse(451, 400, 15, 20, Math.PI / 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.ellipse(551, 400, 15, 20, Math.PI / 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(551, 270);
+      ctx.lineTo(551, 410);
+      ctx.lineTo(530, 410);
+      ctx.lineTo(530, 270);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.moveTo(450, 270);
+      ctx.lineTo(450, 410);
+      ctx.lineTo(471, 410);
+      ctx.lineTo(471, 270);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.ellipse(461, 400, 15, 20, Math.PI / 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+      
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'grey';
+      ctx.beginPath();
+      ctx.ellipse(541, 400, 15, 20, Math.PI / 2, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'gold';
+      ctx.beginPath();
+      ctx.arc(475, 150, 10, 0, Math.PI * 2,)
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'gold';
+      ctx.beginPath();
+      ctx.arc(525, 150, 10, 0, Math.PI * 2,)
+      ctx.fill();
+      ctx.stroke();
+      ctx.closePath();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'rgb(167, 167, 167)';
+      ctx.beginPath();
+      ctx.ellipse(510, 175, 10, 11, Math.PI / 1, 0, 4, true);
+      ctx.stroke();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'rgb(167, 167, 167)';
+      ctx.beginPath();
+      ctx.ellipse(489, 176, 10, 11, Math.PI / 1.7, 0, 4, true);
+      ctx.stroke();
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 1;
+      ctx.fillStyle = 'rgb(167, 167, 167)';
+      ctx.beginPath();
+      ctx.moveTo(500, 175);
+      ctx.lineTo(490, 165);
+      ctx.lineTo(510, 165);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+    </script>
+  </body>
+</html>
