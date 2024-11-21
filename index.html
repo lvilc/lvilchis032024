@@ -286,6 +286,10 @@
                 display: block;
                 min-width: 200px;
             }
+            .footerlinks a 
+            {
+                color: var(--color-quaternary);
+            }
             #flexsubfooter
             {
                 display: flex;
@@ -378,7 +382,7 @@
                 </blockquote>
             </div>
             <!-- <iframe src="https://www.youtube.com/embed/8TmrPvoHSGQ?si=bv0T4VsHRFBxDXls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-            <button id="virus" onclick="audio.play()">click me for a virus</button>
+            <button id="virus">click me for a virus</button>
     
         </section>
         <!-- end media -->
@@ -511,7 +515,7 @@
 
     <script>
         let audio = new Audio("Audio/smoothoperator.mp3");
-        const buttons = document.querySelector("virus");
+        const button = document.querySelector('#virus');
 
         button.addEventListener("click", smoooothOperator);
         function smoooothOperator(){
