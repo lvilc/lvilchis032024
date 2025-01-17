@@ -19,8 +19,8 @@
         }
         #menu
         {
-            background-color: silver;
-            border: 2px solid #333;
+            background-color: rgb(235, 255, 255);
+            border: 2px solid #7993b0;
             height: 60px;
             width: 100%;
             padding: 1rem;
@@ -46,9 +46,11 @@
     <section id="menu">
         <input type="color" id="colorpicker" value="#000000">
         <input type="range" id="rangepicker" min="5" max="100" value="15">
-        <div id="erase"><img src="Images/eraser.png" alt="eraser - erase your drawing"></div>
-        <div id="clear"><img src="Images/bin.png" alt="trash can - clear your canvas"></div>
+        <div id="erase"><img src="Images/eraser.svg" alt="eraser - erase your drawing"></div>
+        <div id="clear"><img src="Images/bin.svg" alt="trash can - clear your canvas"></div>
         <div id="undo"><img src="Images/undo.svg" alt="undo - undo last stroke"></div>
+        <div id="download"><img src="Images/download.svg" alt="download - download canvas image"></div>
+
     </section>
 
     <script>
@@ -57,6 +59,7 @@
         let brushColor = "#000000"; // Default brush color
         let painting = false; 
         let brushSize = 15;
+        let canvasData;
 
         // Canvas drawing variables
         let lineJoinStyle = "round";
@@ -72,31 +75,40 @@
         const ERASE = window.document.querySelector('#erase');
         const CLEAR = window.document.querySelector('#clear');
         const UNDO = window.document.querySelector('#undo');
+        const DOWNLOAD = window.document.querySelector('#download');
 
         // Set canvas style
         CANVAS.width = window.innerWidth;
         CANVAS.height = window.innerHeight;
         CANVAS.style.backgroundColor = canvasColor;
 
+        //Color the canvas
+        CTX.fillStyle = canvasColor;
+        CTX.fillRect(0,0, CANVAS.width,CANVAS.height);
+
+
         // Add event listeners to menu items
         COLORPICKER.addEventListener('input', function(e)
         {
+            //alert('Colorpicker!');
             brushColor = e.target.value;
         }
         );
         RANGEPICKER.addEventListener('input', function(e)
         {
-            // alert('Rangerpicker!');
+            //alert('Rangerpicker!');
             brushSize = e.target.value;
         }
         );
         ERASE.addEventListener('click', function()
         {
-            brushColor = canvasColor;
+            //alert('eraser');
+            brushColor = canvasColor
         }
         );
         CLEAR.addEventListener('click', function()
         {
+            //alert('clear');
             CTX.strokeStyle = canvasColor;
             CTX.fillStyle = canvasColor;
             CTX.lineWidth = 5;
@@ -111,6 +123,24 @@
             alert('undo');
         }
         );
+        DOWNLOAD.addEventListener('click',function(e)
+        {
+            //alert('download');
+            let imageData = CANVAS.toDataURL();
+            
+            //alert(imageData);
+
+            // Color Canvas
+
+            let link = document.createElement('a');
+            link.href = imageData;
+            link.download = "paintingappimage";
+            link.click();
+            link.remove();
+
+
+        }
+        );
 
         // Create Object to track x and y coordinates
         const MOUSE = 
@@ -123,6 +153,8 @@
 
         CANVAS.addEventListener('mousedown', function(e){
             painting = true;
+
+
             
             // Capture x and y coordinates
             MOUSE.x = e.x;
@@ -145,6 +177,7 @@
         draw();
     })
 
+
     function draw()
     {
         if(painting == true)
@@ -153,7 +186,6 @@
         CTX.lineWidth = brushSize;
         CTX.lineJoin = lineJoinStyle;
         CTX.lineCap = lineCapStyle;
-
         CTX.lineTo(MOUSE.x, MOUSE.y);
         CTX.stroke();
     }
@@ -161,13 +193,23 @@
     CANVAS.addEventListener('mouseup', function()
     {
         painting = false;
+
+        canvasData = CTX.getImageData(0, 0, CANVAS.width, CANVAS.height);
+        //alert(canvasData);
+        console.log(canvasData);
+        
     })
 
-    // CANVAS.addEventListener('resize', function(e)
-    // {
-    //     CANVAS.width = innerWidth;
-    //     CANVAS.height = innerHeight;
-    // })
+    window.addEventListener('resize', function()
+    {
+        //alert('resized!')
+        CANVAS.width = window.innerWidth;
+        CANVAS.height = window.innerHeight;
+        // Place canvas data on canvas
+        CTX.putImageData(canvasData, 0, 0);
+
+
+    })
     </script>
 </body>
 </html>
