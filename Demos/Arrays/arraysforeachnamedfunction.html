@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays forEach Named Function</title>
+</head>
+<body>
+    <h1>
+        Array forEach Named Function
+    </h1>
+
+    <script>
+        // Arrays of numbers
+        let numbers = [0, 5, 10, 15];
+
+        numbers.forEach(multiplybyFive);
+
+        // Call the function
+        // multiplybyFive(10);
+
+        // Named function
+        function multiplybyFive(n, i)
+        {
+            alert(n+5 + " This is index " + i);
+        }
+    </script>
+
+
+
+</body>
+</html>
