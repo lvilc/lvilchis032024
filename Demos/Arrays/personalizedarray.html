@@ -11,16 +11,35 @@
      <script>
         // Variables
         let famousCats;
-        let animatedShows;
-        let favoriteSweets;
 
         // Blank Arrays
         famousCats = [];
-        animatedShows = [];
-        favoriteSweets = [];
 
         // famousCats
-        famousCats[1] = ''
+        famousCats[0] = 'Grumpy Cat';
+        famousCats[1] = 'Sister Minnie';
+        famousCats[2] = 'Tator Tot';
+        famousCats[3] = 'Henri';
+        famousCats[4] = 'Mittens';
+
+        famousCats.push('Morris');
+        famousCats.push('Hello Kitty');
+        famousCats.push('Talking Tom');
+        famousCats.push('Mr. Jinx');
+        famousCats.push('Mr. Fresh');
+
+        famousCats.shift();
+        famousCats.unshift('Ethel');
+
+        famousCats.push('Garfield');
+        famousCats.pop();
+
+        famousCats.forEach(  function(cat)
+        {
+            console.log(cat + ' is a famous cat.');
+            console.log(famousCats.length);
+            document.write('<p>' + 'I love ' + cat + '<p>' + '<img src="images/jumping-gatito.gif">' + '</p>');
+        }  );
 
      </script>
 </body>
