@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        /* Mobile First Design */
+        body
+        {
+            background-color:lightpink;
+            padding-top:1rem;
+        }
+        #container
+        {
+            max-width:1200px;
+            background-color:palevioletred;
+            margin:auto;
+            border:1px solid black;
+        }
+        nav
+        {
+            background-color:salmon;
+            min-height:5rem;
+            padding:1rem;
+            grid-area:nav;
+        }
+        header{
+            background-color:indianred;
+            min-height:5rem;
+            padding:1rem;
+            grid-area:hea;
+        
+        }
+        div#media
+        {
+            background-color:peachpuff;
+            min-height:5rem;
+            padding:1rem;
+            grid-area:med;
+        }
+        main
+        {
+            background-color: white;
+            min-height:5rem;
+            padding:1rem;
+            grid-area:mai;
+        }
+        aside
+        {
+            background-color: lemonchiffon;
+            min-height:5rem;
+            padding:1rem;
+            grid-area: asi;
+        }
+        footer
+        {
+            background-color:blanchedalmond;
+            min-height:5rem;
+            padding:1rem;
+            grid-area:foo;
+        }
+        footer#subfooter
+        {
+            background-color:wheat;
+            min-height:5rem;
+            padding:1rem;
+            grid-area:sub;
+        }
+        /* Tablet and Desktop */
+        /* Media Queries */
+        @media screen and (min-width:480px)
+        {
+            body
+            {
+                background-color:bisque;
+            }
+            #container
+            {
+                display: grid;
+                gap: 1rem;
+                grid-template-areas:
+                "hea hea hea hea"
+                "nav nav nav nav"
+                "med med med med"
+                "mai mai mai mai"
+                "asi asi asi asi"
+                "foo foo foo foo"
+                "sub sub sub sub"
+                ;
+            }
+            div#media
+            {
+                min-height: 10rem;
+                transition: all 2s;
+            }
+            main
+            {
+                min-height: 10rem;
+                transition: all 2s;
+            }
+        }
+        @media screen and (min-width:768px)
+        {
+            body
+            {
+                background-color:linen;
+            }
+            #container
+            {
+                grid-template-areas:
+                "hea hea hea hea"
+                "nav nav nav nav"
+                "med med med med"
+                "mai mai mai asi"
+                "foo foo foo asi"
+                "sub sub sub sub"
+                ;
+            }
+        }
+        @media screen and (min-width:1200px)
+        {
+            body
+            {
+                background-color:moccasin;
+            }
+            header
+            {
+                min-height: 10rem;
+            }
+            div#media
+            {
+                min-height: 18rem;
+            }
+            main
+            {
+                min-height: 30rem;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div id="container">
+        <nav>Nav</nav>
+
+        <header>Header</header>
+
+
+        <div id="media">media</div>
+
+        <main>Main</main>
+
+        <aside>Aside</aside>
+
+        <footer>Footer</footer>
+
+        <footer id="subfooter">subfooter</footer>
+
+
+        </div>
+</body>
+</html>
