@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas On Your Own 2</title>
+    <style>
+        body
+        {
+            background-color: yellow;
+        }
+        #container
+        {
+            background-color: purple;
+            margin: auto;
+            width: 80%;
+            max-width: 1200px;
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+        }
+        #wrapper
+        {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-areas:
+            "hea hea hea"
+            "nav nav nav"
+            "med med med"
+            "mai mai mai"
+            "one one one"
+            "two two two"
+            "foo foo foo"
+            "det det det";
+        }
+        #pageheader
+        {
+            background-color: orange;
+            min-height: 12rem;
+            grid-area: hea;
+        }
+        #mainnav
+        {
+            background-color: aqua;
+            min-height: 10rem;
+            grid-area: nav;
+        }
+        #intromedia
+        {
+            background-color: lime;
+            min-height: 16rem;
+            grid-area: med;
+        }
+        #pagemain
+        {
+            background-color: white;
+            min-height: 16rem;
+            grid-area: mai;
+        }
+        #card001
+        {
+            background-color: coral;
+            border: 1px solid black;
+            min-height: 13rem;
+            grid-area: one;
+        }
+        #card002
+        {
+            background-color: lightblue;
+            min-height: 13rem;
+            border: 1px solid black;
+            grid-area: two;
+        }
+        #pagefooter
+        {
+            background-color: gold;
+            min-height: 10rem;
+            grid-area: foo;
+        }
+        #pagedetails
+        {
+            background-color: silver;
+            min-height: 16rem;
+            grid-area: det;
+        }
+
+        @media screen and (min-width: 768px)
+        {
+            #wrapper
+            {
+                background-color: #483c8a;
+                gap: 10px;
+                display: grid;
+                grid-template-areas:
+                "hea hea hea"
+                "med med med"
+                "nav mai mai"
+                "nav one two"
+                "foo foo foo"
+                "det det det";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <header id="pageheader">#pageheader</header>
+            <nav id="mainnav">#mainnav</nav>
+            <div id="intromedia">#intromedia</div>
+            <main id="pagemain">#pagemain</main>
+            <section id="card001">#card001</section>
+            <section id="card002">#card002</section>
+            <footer id="pagefooter">#pagefooter</footer>
+            <footer id="pagedetails">#pagedetails</footer>
+        </div>
+    </div>
+</body>
+</html>
