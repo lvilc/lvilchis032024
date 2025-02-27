@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <title>Central Valley Pets</title>
+    <style>
+        body
+        {
+            background-image: url(images/background/background1.png);
+            padding-top: 5rem;
+            font-family: "Fira Sans", "Cabin", "Signika Negative";
+            color: #333;
+        }
+        #container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            border: 3px solid #333;
+        }
+        header {
+            min-height: 6rem;
+            padding: 2rem;
+            grid-area: hea;
+            background-color: #86bf91;
+            background-image: url(images/background/backgorundf2.png);
+            position: relative;
+        }
+        div#logo
+        {
+            background-image: url(images/logos/logo2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            left: calc(50% - 75px);
+            top: -50px;
+        }
+        header h1
+        {
+            position: absolute;
+            left: calc(50% - 132px);
+            bottom: 0px;
+        }
+        nav {
+            min-height: 2rem;
+            padding: 1rem;
+            grid-area: nav;
+            background-color: #a9c6a6;
+            position: relative;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        nav ul
+        {
+            padding: 0;
+            list-style-type: none;
+            justify-content:space-around;
+            display: flex;
+            text-align: center;
+        }
+        a
+        {
+            color: black;
+            text-decoration: none;
+        }
+        #media {
+            min-height: 20rem;
+            padding: 1rem;
+            grid-area: med;
+            background-color:floralwhite;
+            /* background-image: url(images/cats/large/3kittens.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat; */
+        }
+        #cats
+        {
+            display: block;
+            width: 100%;
+            max-width: 750px;
+            margin: auto;
+            /* margin: auto; */
+        }
+        #catanddog
+        {
+            display: none;
+            width: 100%;
+            max-width: 750px;
+            margin: auto;
+            /* margin: auto; */
+        }
+        main {
+            min-height: 20rem;
+            padding: 1rem;
+            grid-area: mai;
+            background-color: #d1e3bb;
+        }
+        main p
+        {
+            text-align:left;
+            line-height: 1.7;
+
+        }
+        main h2
+        {
+            display: block;
+            text-align: center;
+        }
+        aside {
+            min-height: 10rem;
+            padding: 1rem;
+            grid-area: asi;
+            background-color: #a9c6a6;
+            display: none;
+        }
+        aside ul
+        {
+            padding: 0;
+            list-style-type: none;
+            text-align: left;
+        }
+        aside ul li
+        {
+            padding: 1px;
+            padding-bottom: 10px;
+        }
+        #subfooter
+        {
+            min-height: 5rem;
+            padding: 1rem;
+            grid-area: sub;
+            background-color: #dfecc8;
+        }
+        #subfooter p
+        {
+            text-align: center;
+        }
+        footer {
+            min-height: 8rem;
+            padding: 1rem;
+            grid-area: foo;
+            background-color:#f6fade;
+            border-top: 1px solid #333;
+        }
+        footer h3
+        {
+            position: relative;
+            text-align: center;
+            top: -10px;
+        }
+        @media screen and (min-width: 768px) 
+        {
+            #container
+            {
+                display: grid;
+                grid-template-areas:
+                "hea hea hea"
+                "nav nav nav"
+                "med med med"
+                "asi mai mai"
+                "sub sub sub"
+                "foo foo foo"
+                ;
+            }
+            aside
+            {
+                display: block;
+            }
+            #cats
+            {
+                display: none;
+            }
+            #catanddog
+            {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+            <header>
+                <div id="logo"></div>
+                <h1>Central Valley Pets</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Why Adopt?</a></li>
+                    <li><a href="index.html">Adoptable Animals</a></li>
+                    <li><a href="index.html">Testimonies</a></li>
+                </ul>
+            </nav>
+            <div id="media">
+                <img id="cats" src="images/cats/large/3kittens.jpeg" alt="">
+                <img src="images/cat+dog/large/beagleCat.jpg" alt="A dog and a cat in a basket with yellow flowers around" id="catanddog">
+            </div>
+            <main>
+                <h2>Welcome To Central Valley Pets</h2>
+                <p>
+                    Have you considered adopting a pet? 
+                    Adopting a pet is a great way to get a new family member and our agency is a great place to start.
+                    We have a variety of pets available for adoption, such as cats, dogs, and a few other animals. Most of these animals were rescued from bad situations and are looking for a new home.
+                    They're receiving the love and care they deserve.
+                </p>
+                <p>
+                    We hope you'll consider adopting a pet from us.
+                </p>
+            </main>
+            <aside>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Why Adopt </a></li>
+                    <li><a href="index.html">Adoptable Animals</a></li>
+                    <li><a href="index.html"Testimonies>Testimonies</a></li>
+                </ul>
+            </aside>
+            <footer id="subfooter">
+                <h3>Contact Us!</h3>
+                <p>
+                    Located at 1234 Main Street, Fresno, CA 93727. <br> <br>
+                    Call us at 555-555-5555 or email us at centralvalleypets@gmail.com for more information.
+                </p>
+            </footer>
+            <footer>
+                <h3>&copy; Central Valley Pets 2025</h3>
+            </footer>
+    </div>
+</body>
+</html>
