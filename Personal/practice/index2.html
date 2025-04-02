@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout one</title>
+    <style>
+        body
+        {
+            background-color: yellow;
+            padding-top: 7rem;
+        }
+        #pageheader
+        {
+            background-color: orange;
+            padding: 5px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        #pageheader ul
+        {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        #container
+        {
+            background-color: purple;
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 3rem;
+            padding-top: 0;
+            padding-bottom: 2rem;
+        }
+        #wrapper
+        {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, minmax(150px, auto));
+            grid-template-areas:
+            "nav"
+            "med"
+            "mid"
+            "mai"
+            "one"
+            "two"
+            "three"
+            "four"
+            "foo"
+            "sub";
+        }
+        #media
+        {
+            background-color: lime;
+            padding: 1rem;
+            grid-area: med;
+        }
+        #midnav
+        {
+            background-color: aqua;
+            padding: 1rem;
+            grid-area: mid;
+        }
+        main
+        {
+            background-color: white;
+            padding: 1rem;
+            grid-area: mai;
+        }
+        .cards
+        {
+            background-color: #F5F5DC;
+            padding: 1rem;
+            border: silver 1px solid;
+        }
+        #sectionone
+        {
+            grid-area: one;
+        }
+        #sectiontwo
+        {
+            grid-area: two;
+        }
+        #sectionthree
+        {
+            grid-area: three;
+        }
+        #sectionfour
+        {
+            grid-area: four;
+        }
+        #pagefooter
+        {
+            background-color: silver;
+            padding: 1rem;
+            grid-area: foo;
+        }
+        #subfooter
+        {
+            background-color: magenta;
+            padding: 1rem;
+            grid-area: sub;
+        }
+        @media screen and (min-width: 768px)
+        {
+            #wrapper
+            {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: repeat(5, minmax(150px, auto));
+                grid-template-areas:
+                "med med med med"
+                "mid mai mai mai"
+                "one two three four"
+                "foo foo foo foo"
+                "sub sub sub sub";
+            }
+            #container
+            {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="pageheader">
+        #pageheader
+        <ul>
+            <li>Yahoo</li>
+            <li>Yahoo</li>
+            <li>Yahoo</li>
+            <li>Yahoo</li>
+        </ul>
+    </header>
+    <div id="container">
+        <div id="wrapper">
+            <div id="media">#media</div>
+            <nav id="midnav">#midnav</nav>
+            <main>main</main>
+            <section id="sectionone" class="cards">#sectionone</section>
+            <section id="sectiontwo" class="cards">#sectiontwo</section>
+            <section id="sectionthree" class="cards">#sectionthree</section>
+            <section id="sectionfour" class="cards">#sectionfour</section>
+            <footer id="pagefooter">#pagefooter</footer>
+            <footer id="subfooter">#subfooter</footer>
+        </div>
+    </div>
+</body>
+</html>

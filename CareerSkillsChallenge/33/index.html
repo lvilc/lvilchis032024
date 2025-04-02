@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 3</title>
+    <style>
+        /* Mobile Design */
+        body
+        {
+            background-color: yellow;
+        }
+
+        #pageheader
+        {
+            background-color: orange;
+        }
+        #topnav ul
+        {
+
+        }
+
+        #container
+        {
+            background-color: purple;
+            max-width: 1200px;
+            width: 90%;
+            padding: 1rem;
+            padding-top: 100px;
+            padding: 20px;
+            margin:auto;
+        }
+
+        #wrapper
+        {
+            background-color: green;
+            max-width: 90%;
+            margin: auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas: 
+            "med"
+            "mid"
+            "mai"
+            "one"
+            "two"
+            "thr"
+            "foo"
+            "subf"
+            ;
+        }
+
+        #media
+        {
+            background-color: lime;
+            padding: 1rem;
+            grid-area: med;
+            position: relative;
+        }
+
+        #logo
+        {
+            background-color: silver;
+            width: 75px;
+            height:75px;
+            position: absolute;
+            border: 2px solid white;
+            top: -30px;
+            left: -30px;
+            border-radius: 50%;
+        }
+
+        #midnav
+        {
+            background-color: aqua;
+            padding: 1rem;
+            grid-area: mid;
+        }
+        #midnav ul
+        {
+
+        }
+
+        main
+        {
+            background-color: white;
+            padding: 1rem;
+            grid-area: mai;
+        }
+
+        /* Three Sections */
+        .cards
+        {
+            background-color:beige;
+            padding: 1rem;
+            border: 1px solid silver;
+            border-radius: 6px;
+        }
+        #sectionone
+        {
+            grid-area: one;
+        }
+        #sectiontwo
+        {
+            grid-area: two;
+        }   
+        #sectionthree
+        {
+            grid-area: thr;
+        }
+
+        #pagefooter
+        {
+            background-color: lightgrey;
+            padding:1rem;
+            grid-area: foo;
+        }
+        #subfooter
+        {
+            background-color: magenta;
+            padding:1rem;
+            grid-area: subf;
+        }
+
+        /* Desktop Design */
+        @media screen and (min-width: 768px)
+        {
+            #wrapper
+            {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-areas:
+                "med med med"
+                "mid mai mai"
+                "one two thr"
+                "foo foo foo"
+                "subf subf subf"
+                ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="pageheader">
+        #pageheader
+        <nav id="topnav">
+            <ul>
+                <li>Yahoo</li>
+                <li>Yahoo</li>
+                <li>Yahoo</li>
+                <li>Yahoo</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div id="wrapper">
+
+            <div id="media">
+                #media
+                <div id="logo"></div>
+            </div>
+
+            <nav id="midnav">
+                #midnav
+                <ul>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                </ul>
+            </nav>
+
+            <main>
+                main - layoutthree
+            </main>
+
+            <section id="sectionone" class="cards">#sectionone</section>
+            <section id="sectiontwo" class="cards">#sectiontwo</section>
+            <section id="sectionthree" class="cards">#sectionthree</section>
+
+            <footer id="pagefooter">#pagefooter</footer>
+
+            <footer id="subfooter">#subfooter</footer>
+
+        </div>
+        <!-- end wrapper -->
+    </div>
+    <!-- end container -->
+</body>
+</html>

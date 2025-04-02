@@ -1,0 +1,178 @@
+body
+        {
+            background-color: none;
+            background-image: url(images/background2.jpg);
+            padding-top: 5rem;
+            font-family: "Libre Franklin", "Source Serif 4", "Prata", "Quattrocento Sans", serif, sans-serif;
+        }
+        #container
+        {
+            background-color: aliceblue;
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            border: 5px solid black;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, minmax(75px, auto));
+            grid-template-areas:
+            "hea"
+            "nav"
+            "med"
+            "main"
+            "mfo";
+        }
+        header
+        {
+            background-color: none;
+            background-image: url(images/mars.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+            grid-area: hea;
+            min-height: 120px;
+        }
+        header h1
+        {
+            position: absolute;
+            left: calc(50% - 110px);
+            bottom: 0px;
+            color: white;
+        }
+        header #logo
+        {
+            background-image: url(images/mars.png);
+            width: 150px;
+            height:150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: calc(50% - 75px);
+            top: -75px;
+        }
+        nav
+        {
+            background-color: black;
+            grid-area: nav;
+        }
+        nav ul
+        {
+            list-style-type: none;
+            padding: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li a
+        {
+            color: white;
+            text-decoration: none;
+        }
+        #media
+        {
+            background-color: cadetblue;
+            grid-area: med;
+        }
+        #media #marswater
+        {
+            display:block;
+        }
+        #media #marsland
+        {
+            display: none;
+        }
+        #media img
+        {
+            width: 100%;
+            height: auto;
+        }
+        main
+        {
+            background-color: #C57E6F;
+            padding: 1rem;
+            grid-area: main;
+        }
+        main h2
+        {
+            text-align: center;
+            color: #333;
+        }
+        main p
+        {
+            text-align: justify;
+            line-height: 1.7;
+            color: #333;
+        }
+        main img
+        {
+            width: 100%;
+            height: auto;
+        }
+        main figure
+        {
+            text-align: center;
+            color: #333;
+        }
+        aside
+        {
+            background-color: #AA534E;
+            padding: 1rem;    
+            grid-area: asi;
+            display: none;
+        }
+        aside ul
+        {
+            padding: 0;
+        }
+        aside ul li
+        {
+            list-style: none;
+            padding-top: 10px;
+        }
+        aside ul li a
+        {
+            color: white;
+            text-decoration: none;
+            padding: 1px;
+        }
+        #mainfooter
+        {
+            background-color: black;
+            grid-area: mfo;
+        }
+        #mainfooter h3
+        {
+            color: white;
+            text-align: center;
+        }
+        /* #subfooter
+        {
+            background-color: darkblue;
+            grid-area: sub;
+        } */
+        @media screen and (min-width: 760px)
+        {
+            #media #marsland
+            {
+                display: block;
+            }
+            #media #marswater
+            {
+                display: none;
+            }
+            #container
+            {
+                grid-template-columns: repeat(4, minmax(75px, auto));
+                grid-template-rows: repeat(1, 1fr);
+                grid-template-areas:
+                "hea hea hea hea"
+                "nav nav nav nav"
+                "med med med med"
+                "asi main main main"
+                "mfo mfo mfo mfo";
+            }
+            aside
+            {
+                display: block;
+            }
+        }

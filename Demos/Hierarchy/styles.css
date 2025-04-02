@@ -1,0 +1,38 @@
+body
+        {
+            background-color: lemonchiffon;
+            color: #333333;
+        }
+        h1
+        {
+            font-family: "Roboto Slab", serif;
+        }
+        h2
+        {
+            font-family: "Roboto Slab", serif;
+        }
+        p
+        {
+            line-height: 1.7;
+            font-family: "Roboto", sans-serif;
+        }
+        nav#topnav
+        {
+            background-color:bisque;            
+            padding: 1rem;
+        }
+        nav#topnav ul
+        {
+            background-color: lightcoral;
+            padding: 1rem;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        nav#topnav a
+        {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }

@@ -1,0 +1,363 @@
+/* Mobile design first */
+
+:root
+{
+    --color-primary: #fff103;
+    --color-secondary: black;
+    --color-tertiary: white;
+    --color-quaternary:#01994c;
+    --color-quinary:#ed1c26;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-image: url(Images/ccccaaaarrrbbbboooonnnnfffiiiibbbbbeeeeerrrrrrr.png);
+}
+
+h1
+{
+    font-family: "Sora", sans-serif;
+}
+h2, h3
+{
+    font-family: "Raleway", sans-serif;
+}
+a
+{
+    font-family: "Inconsolata", sans-serif;
+    text-decoration: none;
+}
+p, blockquote, li
+{
+    font-family: "Noto Serif", serif;
+}
+
+#containall
+{
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.container
+{
+    background-color: white;
+    min-height: 10rem;
+    max-width: 75rem;
+    margin: auto;
+    padding: 2rem 3rem 2rem 3rem;
+    position: relative;
+    border: 1px solid black;
+}
+
+#pageheader
+{
+    min-height: 200px;
+    background-color: var(--color-primary);
+    padding: 1rem;
+}
+#pageheader .container
+{
+    background-color: none;
+    background-image: url(Images/monzalivery.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+#logo
+{
+    background-image: url(Images/logo.png);
+    background-size: cover;
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    left: calc(50% - 75px);
+    top: 10px;
+    transition: all 2s;
+    z-index: 1;
+}
+
+#pagenav
+{
+    background-color: none;
+    min-height: 40px;
+    min-width: 400px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: auto;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 200px);
+}
+
+#pagenav a
+{
+    color: var(--color-tertiary);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+#pagenav a:hover
+{
+    color: var(--color-quinary);
+}
+
+#topnav
+{
+    min-height: auto;
+    background-color: var(--color-primary);
+    padding: 10px;
+    text-align: center;
+}
+#topnav a
+{
+    color: var(--color-quinary);
+    padding: 5px;
+}
+
+#topnav .container
+{
+    min-height: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#media
+{
+    min-height: 200px;
+    background-image: url(Images/media.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 1rem;
+}
+#media h1
+{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-quaternary);
+}
+#media h2
+{
+    text-align: center;
+    font-size: 2rem;
+}
+#media blockquote
+{
+    background-color:none;
+    margin: auto;
+    padding: 10px;
+    color: var(--color-quinary);
+}
+#quote
+{
+    background-color: #ffed2438;
+    max-width: 60%;
+    margin: auto;
+}
+button
+{
+    display: none;
+}
+#career
+{
+    min-height: 200px;
+    background-color: var(--color-quaternary);
+    padding: 1rem;
+}
+
+#career a
+{
+    color: var(--color-quinary);
+}
+
+#pagecontent
+{
+    min-height: 200px;
+    background-color: var(--color-quaternary);
+    padding: 1rem;
+}
+#keyassignments
+{
+    min-height: 200px;
+    background-color: var(--color-tertiary);
+    padding: 1rem;
+}
+
+#semester1
+{
+
+    min-height: 200px;
+    background-color:var(--color-tertiary);
+    padding: 1rem;
+}
+
+#semester1 a
+{
+    color: var(--color-quinary);
+}
+
+#semester2
+{
+    min-height: 200px;
+    background-color:var(--color-tertiary);
+    padding: 1rem;
+}
+#semester2 a
+{
+    color: var(--color-quinary);
+}
+
+#pagefooter
+{
+    min-height: auto;
+    background-color: var(--color-quinary);
+    padding: 1rem;
+    text-align: center;
+}
+
+#pagefooter a
+{
+    color: var(--color-quaternary);
+}
+
+#pagefooter .container
+{
+    min-height: 10px;
+}
+
+#subpagefooter
+{
+    min-height: 200px;
+    background-color:var(--color-quinary);
+    padding: 1rem;
+}
+.footerlinks
+{
+    display:none;
+}
+#top
+{
+    width: 25px;
+    height: 25px;
+    background-color: none;
+    background-image: url(Images/Ferrari-Emblem.png);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+}
+#top a
+{
+    color: var(--color-tertiary);
+}
+/* iframe
+{
+    width: ;
+} */
+
+/* Media Queries */
+@media only screen and (min-width:320px)
+{
+    #pagecontent
+    {
+
+    }
+}
+
+@media only screen and (min-width:480px)
+{
+    #pagecontent
+    {
+
+    }   
+    #media
+    {
+        
+    }
+}
+
+@media only screen and (min-width:768px)
+{
+    #pagecontent
+    {
+        
+    }
+    #media
+    {
+        height: 350px;
+    }
+    .footerlinks
+    {
+        display: block;
+        min-width: 200px;
+    }
+    .footerlinks a 
+    {
+        color: var(--color-quaternary);
+    }
+    #flexsubfooter
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width:1024px)
+{
+    #pagecontent
+    {
+
+    }
+    #logo
+    {
+        left: 5px;
+    }
+    #media
+    {
+        height: 450px;
+        background-image: url(Images/media.jpg);
+        position: relative;
+    }
+    #pagenav
+    {
+        top: 0px;
+        right: 0px;
+        left: auto;
+        bottom: auto;
+    }
+    #pagenav .container
+    {
+        
+    }
+
+    button
+    {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@media only screen and (min-width:1200px)
+{
+    #media
+    {
+        height: 600px;
+    }
+    #pagecontent
+    {
+
+    }
+}

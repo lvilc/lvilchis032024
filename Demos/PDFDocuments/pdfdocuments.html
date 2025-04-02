@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Documents</title>
+    <style>
+        iframe
+        {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16/9;
+            border: 2px solid black;
+        }
+        #certificates
+        {
+            aspect-ratio: 4/3;
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF Documents</h1>
+
+    <h2>English10 Essay</h2>
+    <iframe src="PDFs/English10Essay.pdf" frameborder="0"></iframe>
+    <h2>Spanish Ap Presentation</h2>
+    <iframe src="PDFs/SpanishAP -Tú Plan Educativo.pdf" frameborder="0"></iframe>
+    <h2>English10 Essay</h2>
+    <iframe src="PDFs/English10Essay.pdf" frameborder="0"></iframe>
+    <h2>Spanish Ap Presentation</h2>
+    <iframe src="PDFs/SpanishAP -Tú Plan Educativo.pdf" frameborder="0"></iframe>
+    <h2>English Humanity Certificates</h2>
+    <iframe src="PDFs/EnglishHumanityCertificate.pdf" frameborder="0" id="certificates"></iframe>
+
+    <script>
+        window.addEventListener('resize', refresh);
+        function refresh()
+        {
+            // alert('refresh');
+            window.location.reload(true);
+        }
+    </script>
+</body>
+</html>

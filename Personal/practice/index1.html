@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2</title>
+    <style>
+        body
+        {
+            background-color: red;
+        }
+        #container
+        {
+            background-color: purple;
+            max-width: 1200px;
+            width: 80%;
+            margin: auto;
+            padding: 1rem;
+            padding-top: 3rem;
+        }
+        #wrapper
+        {
+            width:90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, minmax(150px, auto));
+            /* grid-template-rows: repeat(10, 1fr); */
+            grid-template-areas:
+            "hea"
+            "nav"
+            "med"
+            "mai"
+            "one"
+            "two"
+            "three"
+            "four"
+            "foo"
+            "sub";
+        }
+        #pageheader
+        {
+            background-color: orange;
+            padding: 1rem;
+            grid-area: hea;
+            border-radius: 1rem 1rem 0 0;
+            text-align: center;
+        }
+        #pagenav
+        {
+            background-color: magenta;
+            padding: 1rem;
+            grid-area: nav;
+        }
+        #pagenav
+        {
+            text-align: center;
+        }
+        #pagenav ul
+        {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        #media
+        {
+            background-color: lime;
+            padding: 1rem;
+            grid-area: med;
+        }
+        main
+        {
+            background-color: white;
+            padding: 1rem;
+            grid-area: mai;
+        }
+        main img
+        {
+            width: 50%;
+            border: 2px solid black;
+        }
+        .cards
+        {
+            background-color: #F5F5DC;
+            padding: 1rem;
+            border: silver 1px solid;
+        }
+        #sectionone
+        {
+            grid-area: one;
+        }
+        #sectiontwo
+        {
+            grid-area: two;
+        }
+        #sectionthree
+        {
+            grid-area: three;
+        }
+        #sectionfour
+        {
+            grid-area: four;
+        }
+        #pagefooter
+        {
+            background-color: silver;
+            padding: 1rem;
+            grid-area: foo;
+        }
+        #subfooter
+        {
+            background-color: magenta;
+            padding: 1rem;
+            grid-area: sub;
+        }
+        @media screen and (min-width: 768px)
+        {
+            #wrapper
+            {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: minmax(150px, auto) minmax(100px, auto) minmax(300px, auto) minmax(300px, auto) minmax(150px, auto) minmax(100px, auto) minmax(300px, auto);
+                grid-template-areas:
+                "hea hea hea hea"
+                "nav nav nav nav"
+                "med med med med"
+                "mai mai mai mai"
+                "one two three four"
+                "foo foo foo foo"
+                "sub sub sub sub";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <header id="pageheader">#pageheader</header>
+            <nav id="pagenav">
+                #pagenav
+                <ul>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                    <li>Yahoo</li>
+                </ul>
+            </nav>
+            <div id="media">#media</div>
+            <main>
+                <h1>main</h1>
+                <img src="images/04082024_OpEd-Potatoes_124536.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                <img src="images/04082024_OpEd-Potatoes_124536.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                <img src="images/04082024_OpEd-Potatoes_124536.webp" alt="">
+
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p> 
+            </main>
+            <section id="sectionone" class="cards">#sectionone</section>
+            <section id="sectiontwo" class="cards">#sectiontwo</section>
+            <section id="sectionthree" class="cards">#sectionthree</section>
+            <section id="sectionfour" class="cards">#sectionfour</section>
+            <footer id="pagefooter">#pagefooter</footer>
+            <footer id="subfooter">#subfooter</footer>
+        </div>
+    </div>
+</body>
+</html>
