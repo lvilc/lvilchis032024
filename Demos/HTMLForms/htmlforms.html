@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        body
+        {
+            background-color: #333;
+            
+        }
+        h1
+        {
+            color: white;
+            text-align: center;
+        }
+        #formcontainer
+        {
+            width: 60%;
+            max-width: 600px;
+            min-height: 300px;
+            padding: 1rem;
+            background-color: silver;
+            border: 2px solid black;
+            margin: auto;
+        }
+        p
+        {
+            background-color: white;
+            border: 1px solid black;
+            padding: 1rem;
+            margin: auto;
+            max-width: 500px;
+            min-height: 200px;
+        }
+        fieldset
+        {
+            padding: 1rem;
+            margin: 1rem;
+        }
+        legend
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label
+        {
+            padding: .25rem;
+        }
+        input[type="texts"]
+        {
+            background-color: white;
+            border: 2px solid black;
+        }
+        input[type="text"]::placeholder
+        {
+            color: grey;
+            font-style: italic;
+        }
+        button
+        {
+            padding: 1rem;
+            background-color: black;
+            color: white;
+            margin-bottom: .5rem;
+            margin-top: .5rem;
+        }
+        input[name="language"]
+        {
+            outline: 2px solid black;
+            outline-style: dashed;
+        }
+        input[name="language"]:checked
+        {
+            accent-color: crimson;
+            outline-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <div id="formcontainer">
+
+        <fieldset>
+            <legend>Text Input Elements</legend>
+            <label for="textname">Enter your name</label> <br>
+            <input type="text" id="textname" placeholder="Your Name"> <br>
+            <button id="savetextbutton">Save Text to Local Storage</button>
+            <button id="loadtextbutton">Load Text from Local Storage</button>
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>Radio Input Element</legend>
+            <input type="radio" id="radhtml" value="html" name="language"> <label for="radhtml">HTML</label>
+            <input type="radio" id="radcss" value="css" name="language"> <label for="radcss">CSS</label>
+            <input type="radio" id="radjavascript" value="javascript" name="language"> <label for="radjavascript">JavaScript</label> <br>
+            <button id="saveradiobutton">Save Radio to Local Storage</button>
+            <button id="loadradiobutton">Load Radio from Local Storage</button>
+            
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Select Element</legend>
+            <select name="themeselector" id="themeselector">
+                <option value="redtheme">Red Theme</option>
+                <option value="greentheme">Green Theme</option>
+                <option value="yellowtheme">Yellow Theme</option>
+            </select> <br>
+            <button id="saveselectbutton">Save Select to Local Storage</button>
+            <button id="loadselectbutton">Load Select from Local Storage</button>
+        </fieldset>
+
+        <p name="paragraphoutput" id="paragraphoutput"></p>
+    </div>
+
+
+</body>
+</html>

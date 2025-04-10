@@ -13,6 +13,19 @@
         {
             display: none;
         }
+        iframe
+        {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16/9;
+            border: 2px solid black;
+        }
+        .slides
+        {
+            aspect-ratio: 4/3;
+        }
     </style>
 </head>
 <body>
@@ -74,7 +87,16 @@
             <div class="container">
                 <h1>Work Samples</h1>
                 <!-- <h3>Git Clone</h3> -->
-                <p>Welcome to my Portfolio! My name is Lissandra Vilchis and I've been taking a webpage class for 3 years. I recently started enjoying motorsports, hence my theme and my free time is spent with my cats and listening to random songs I find or vinyls with my mom. So far, I've been intrested in persuing a career in the computer science field so I hope to improve my skills.</p>
+                <h2>AP Lang Honor Codes Essay</h2>
+                <iframe src="WSandC/APLangHonorCodesEssay.pdf" frameborder="0"></iframe>
+                <h2>AP Lang Locavores Essay</h2>
+                <iframe src="WSandC/APLangIsbecominga locavoreright.pdf" frameborder="0"></iframe>
+                <h2>AP Lang GOAT Argument Project</h2>
+                <iframe src="WSandC/APLangTheGOATArgumentProject.pdf" frameborder="0" class="slides"></iframe>
+                <h2>PAPELA10 Argumentative Essay</h2>
+                <iframe src="WSandC/PAPELAArgumentativeEssay.pdf" frameborder="0"></iframe>
+                <h2>Sociology Final</h2>
+                <iframe src="WSandC/SociologyFinal.pdf" frameborder="0"></iframe>
             </div>
             
         </main>
@@ -204,6 +226,13 @@
         audio.currentTime = 0;
         audio.play();
     })
+        window.addEventListener('resize', refresh);
+        function refresh()
+        {
+            // alert('refresh');
+            window.location.reload(true);
+        }
+
     </script>
 </body>
 </html>
