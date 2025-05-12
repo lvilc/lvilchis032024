@@ -40,7 +40,26 @@
             // alert(selStyleSheet.value);
             styleLink.href = selStyleSheet.value;
 
+            // save to local storage
+
+            localStorage.setItem('selectedStylesheet1938', selStyleSheet.value);
+
         }
+
+        window.addEventListener('load', function()
+        {
+            let savedStylesheet = localStorage.getItem('selectedStylesheet1938');
+
+
+            if(savedStylesheet !== null)
+            {
+      
+                // Link to the saved stylesheet
+                styleLink.href = savedStylesheet;
+                // match the boxdrop box (stylesheet) to saved stylesheet
+                selStyleSheet.value = savedStylesheet;
+            }
+        });
     </script>
 </body>
 </html>

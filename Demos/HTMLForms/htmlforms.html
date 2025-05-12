@@ -7,27 +7,26 @@
     <style>
         body
         {
-            background-color: #333;
-            
+            background-color:lemonchiffon;
         }
         h1
         {
-            color: white;
+            color:lightcoral;
             text-align: center;
         }
         #formcontainer
         {
-            width: 60%;
+            width: 80%;
             max-width: 600px;
             min-height: 300px;
             padding: 1rem;
-            background-color: silver;
+            background-color:darksalmon;
             border: 2px solid black;
             margin: auto;
         }
         p
         {
-            background-color: white;
+            background-color: beige;
             border: 1px solid black;
             padding: 1rem;
             margin: auto;
@@ -42,20 +41,21 @@
         legend
         {
             font-family: Arial, Helvetica, sans-serif;
+
         }
         label
         {
             padding: .25rem;
         }
-        input[type="texts"]
+        input[type="text"]
         {
             background-color: white;
             border: 2px solid black;
         }
         input[type="text"]::placeholder
         {
-            color: grey;
-            font-style: italic;
+            color: gray;
+            font-family: italic;
         }
         button
         {
@@ -72,50 +72,157 @@
         }
         input[name="language"]:checked
         {
-            accent-color: crimson;
-            outline-color: crimson;
+            accent-color: rgb(24, 50, 63);
+            
         }
     </style>
 </head>
 <body>
     <h1>HTML Forms</h1>
-
     <div id="formcontainer">
 
-        <fieldset>
-            <legend>Text Input Elements</legend>
-            <label for="textname">Enter your name</label> <br>
-            <input type="text" id="textname" placeholder="Your Name"> <br>
+<fieldset>
+    <legend>Text Input Element</legend>
+            <label for="textname">Enter your name:</label><br>
+            <input type="text" id="textname" placeholder="Your Name">
+            <br>
             <button id="savetextbutton">Save Text to Local Storage</button>
             <button id="loadtextbutton">Load Text from Local Storage</button>
-        </fieldset>
-        
+</fieldset>
 
-        <fieldset>
-            <legend>Radio Input Element</legend>
-            <input type="radio" id="radhtml" value="html" name="language"> <label for="radhtml">HTML</label>
-            <input type="radio" id="radcss" value="css" name="language"> <label for="radcss">CSS</label>
-            <input type="radio" id="radjavascript" value="javascript" name="language"> <label for="radjavascript">JavaScript</label> <br>
-            <button id="saveradiobutton">Save Radio to Local Storage</button>
-            <button id="loadradiobutton">Load Radio from Local Storage</button>
-            
-        </fieldset>
+<fieldset>
+    <legend>Radio Input Element</legend>
+    <input type="radio" id="radhtml" value="html" name="language"><label for="radhtml">HTML</label>
+    <input type="radio" id="radcss" value="css" name="language"><label for="radcss">CSS</label>
+    <input type="radio" id="radjavascript" value="javascript" name="language"><label for="radjavascript">JavaScript</label>
+    <br>
+    <button id="saveradiobutton">Save Radio to Local Storage</button>
+    <button id="loadradiobutton">Load Radio from Local Storage</button>
+</fieldset>
 
+<fieldset>
+    <legend>Select Element</legend>
+    <select name="themeselector" id="themeselector">
+        <option value="redtheme">Red Theme</option>
+        <option value="greentheme">Green Theme</option>
+        <option value="yellowtheme">Yellow Theme</option>
+    </select>
+    <br>
+    <button id="saveselectbutton">Save Select to Local Storage</button>
+    <button id="loadselectbutton">Load Select from Local Storage</button>
 
-        <fieldset>
-            <legend>Select Element</legend>
-            <select name="themeselector" id="themeselector">
-                <option value="redtheme">Red Theme</option>
-                <option value="greentheme">Green Theme</option>
-                <option value="yellowtheme">Yellow Theme</option>
-            </select> <br>
-            <button id="saveselectbutton">Save Select to Local Storage</button>
-            <button id="loadselectbutton">Load Select from Local Storage</button>
-        </fieldset>
+    <p name="paragraphoutput" id="paragraphoutput"></p>
 
-        <p name="paragraphoutput" id="paragraphoutput"></p>
+</fieldset>
     </div>
+
+    <script>
+        // The display paragraph
+        const paragraphOutput = document.getElementById('paragraphoutput');
+
+        //alert(paragraphOutput);
+
+        /*
+        Text section
+        Add event listeners to buttons when the save button is clicked
+        save to local storage
+        */
+        let saveTextButton;
+        saveTextButton = document.querySelector('#savetextbutton');
+        //alert(saveTextButton);
+        let loadTextButton;
+        loadTextButton = document.querySelector('#loadtextbutton');
+        //alert(loadTextButton);
+        
+        // Add event listeners
+        saveTextButton.addEventListener('click', function()
+        {
+            let textName;
+            textName = document.querySelector('#textname').value;
+
+            if(textName.trim()  !== "")
+            {
+                localStorage.setItem('textUserName3216', textName);
+                alert("Name saved to local storage");
+            }
+            else
+                {
+                    alert("Please enter a name before saving.");
+                }
+
+        });
+
+        loadTextButton.addEventListener('click', function(){
+            let savedTextName;
+            savedTextName = localStorage.getItem('textUserName3216');
+
+            if(savedTextName !== null){
+                paragraphOutput.textContent = `Hello, ${savedTextName}!`;
+
+            }
+            else
+            {
+                paragraphOutput.textContent = "No name found in localStorage."
+            }
+
+            /*
+            Radio Section
+            */
+
+        });
+
+        let savedRadioButton;
+        savedRadioButton = document.querySelector('#saveradiobutton');
+        // alert(savedRadioButton);
+
+        let loadRadioButton;
+        loadRadioButton = document.querySelector('#loadradiobutton');
+        // alert(loadRadioButton);
+
+        savedRadioButton.addEventListener('click', function()
+        {
+            let selectedRadio;
+            selectedRadio = document.querySelector('input[name="language"]:checked');
+            // alert(selectedRadio);
+            
+            if(selectedRadio == null)
+            {
+                alert('Please select a language before saving');
+            }
+            else
+            {
+                localStorage.setItem('selectedLanguage9926', selectedRadio.value);
+                alert("Selected language saved to local storage");
+            }
+        });
+        loadRadioButton.addEventListener('click', function()
+        {
+            let saveLanguage;
+            saveLanguage = localStorage.getItem('selectedLanguage9926');
+            
+            if(saveLanguage !== null)
+            {
+                let radioToCheck = document.querySelector(`input[name="language"][value="${saveLanguage}"]`);
+                if(radioToCheck !==null)
+                {
+                    radioToCheck.checked = true;
+                    paragraphOutput.textContent = `You selected: ${saveLanguage}`;
+                }
+                else
+                {
+                    paragraphOutput.textContent = 'Saved language not found';
+                }
+            }
+            else
+            {
+                paragraphOutput.textContent= "No language found in local storage";
+            }
+        });
+
+        
+    </script>
 
 
 </body>
+
 </html>
