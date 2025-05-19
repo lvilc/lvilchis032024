@@ -31,7 +31,10 @@ html
 
 body
 {
-    background-image: url(Images/ccccaaaarrrbbbboooonnnnfffiiiibbbbbeeeeerrrrrrr.png);
+    background-image: url(Images/sailormoon/backgroujd2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1
@@ -79,7 +82,7 @@ p, blockquote, li
 #pageheader .container
 {
     background-color: none;
-    background-image: url(Images/monzalivery.jpg);
+    background-image: url(Images/sailormoon/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
@@ -146,7 +149,7 @@ p, blockquote, li
 #media
 {
     min-height: 200px;
-    background-image: url(Images/media.jpg);
+    background-image: url(Images/sailormoon/main.webp);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -341,7 +344,7 @@ button
     #media
     {
         height: 450px;
-        background-image: url(Images/media.jpg);
+        background-image: url(Images/sailormoon/main.webp);
         position: relative;
     }
     #pagenav
