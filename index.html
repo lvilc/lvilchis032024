@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lissandra Vilchis - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link id="stylelink" rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Inconsolata:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
     <style>
         #career .container ul
         {
@@ -36,6 +37,12 @@
             display: block;
             margin: auto;
             margin-bottom: 1rem;
+        }
+        #selstylesheet
+        {
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
     </style>
 </head>
@@ -86,6 +93,11 @@
             </div>
             <!-- <iframe src="https://www.youtube.com/embed/8TmrPvoHSGQ?si=bv0T4VsHRFBxDXls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
             <button id="virus">click me for a virus</button>
+
+            <select name="selstylesheet" id="selstylesheet" onchange="updateStyleSheet()">
+        <option value="styles.css">F1 Theme</option>
+        <option value="sailormoon.css">Sailor Moon Theme</option>
+    </select>
     
         </section>
         <!-- end media -->
@@ -231,6 +243,42 @@
         audio.currentTime = 0;
         audio.play();
     })
+
+    // Select the select control (dropdown)
+        let selStyleSheet;
+        selStyleSheet = document.querySelector('#selstylesheet');
+        // alert(selStyleSheet.value);
+
+        // Select the link to the external stylesheet
+        let styleLink;
+        styleLink = document.querySelector('#stylelink');
+        // alert(styleLink);
+
+        function updateStyleSheet()
+        {
+            // alert(selStyleSheet.value);
+            styleLink.href = selStyleSheet.value;
+
+            // save to local storage
+
+            localStorage.setItem('selectedStylesheet1938', selStyleSheet.value);
+
+        }
+
+        window.addEventListener('load', function()
+        {
+            let savedStylesheet = localStorage.getItem('selectedStylesheet1938');
+
+
+            if(savedStylesheet !== null)
+            {
+      
+                // Link to the saved stylesheet
+                styleLink.href = savedStylesheet;
+                // match the boxdrop box (stylesheet) to saved stylesheet
+                selStyleSheet.value = savedStylesheet;
+            }
+        });
     </script>
 </body>
 </html>

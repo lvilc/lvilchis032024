@@ -2,11 +2,11 @@
 
 :root
 {
-    --color-primary: #fff103;
+    --color-primary: #F398D1;
     --color-secondary: black;
     --color-tertiary: white;
-    --color-quaternary:#01994c;
-    --color-quinary:#ed1c26;
+    --color-quaternary:#959FD6;
+    --color-quinary: #2BA5FE;
 }
 
 /* reset browser */
@@ -89,7 +89,7 @@ p, blockquote, li
 }
 #logo
 {
-    background-image: url(Images/logo.png);
+    background-image: url(Images/sailormoon/icon.png);
     background-size: cover;
     width: 175px;
     height: 175px;
@@ -141,7 +141,7 @@ p, blockquote, li
 #topnav .container
 {
     min-height: 5px;
-    background-color: black;
+    background-color: white;
     color: white;
     padding: 10px;
 }
@@ -159,7 +159,7 @@ p, blockquote, li
 {
     text-align: center;
     font-size: 3rem;
-    color: var(--color-quaternary);
+    color: var(--color-primary);
 }
 #media h2
 {
@@ -171,11 +171,11 @@ p, blockquote, li
     background-color:none;
     margin: auto;
     padding: 10px;
-    color: var(--color-quinary);
+    color: var(--color-quaternary);
 }
 #quote
 {
-    background-color: #ffed2438;
+    background-color: rgba(255, 255, 255, 0.596);
     max-width: 60%;
     margin: auto;
 }
