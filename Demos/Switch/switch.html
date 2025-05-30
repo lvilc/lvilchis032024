@@ -86,7 +86,26 @@
             console.log("You got a F in History!");
         }
 
-        
+        // calculate english letter grade
+        switch(true)
+        {
+            case gradePercentageEnglish >= 90:
+                console.log("You got an A in English!");
+                break;
+            case gradePercentageEnglish >= 80:
+                console.log("You got an B in English!");
+                break;
+            case gradePercentageEnglish >= 70:
+                console.log("You got an C in English!");
+                break;
+            case gradePercentageEnglish >= 60:
+                console.log("You got an D in English!");
+                break;
+            default:
+                console.log("You got an F in English!");
+                break;
+
+        }
 
     </script>
 
