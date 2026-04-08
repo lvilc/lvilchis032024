@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbeth Final Scavenger Hunt!</title>
+    <style>
+        body
+        {
+            background-image: url(Images/background2.webp);
+        }
+        #container
+        {
+            background-color: white;
+            border: 1rem solid black;
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+        main
+        {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #bigdiv
+        {
+            display: grid;
+            grid-template-areas:
+            "mb lm bq"
+            "md tw ex"
+            ;
+            gap: 10px;
+            padding: 10px;
+        }
+        #macbeth
+        {
+            grid-areas: mb;
+        }
+        #ladymacbeth
+        {
+            grid-areas: lm;
+        }
+        #banquo
+        {
+            grid-areas: bq;
+        }
+        #macduff
+        {
+            grid-areas: md;
+        }
+        #threewitches
+        {
+            grid-areas: tw;
+        }
+        #extras
+        {
+            grid-areas: ex;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        h2
+        {
+            text-align: center;
+        }
+        li
+        {
+            list-style: decimal;
+            padding-top: 1rem;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+            display: block;
+            margin: auto;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Macbeth Scavenger Hunt</h1>
+        <main>
+            <h2>How this works</h2>
+            <p>The goal is to end up on the winning page. So how do you get there? You'll be looking for the lines the key quote from each character is found in on the MyShakespear website. You won't be given any act for the quotes. In the text box provided, you'll type the each of the line numbers. As for the analysis and little summaries, click <a href="">here</a>.</p>
+            <br>
+             <input type="text" id="passwordInput" placeholder="Enter Line Numbers">
+  <button onclick="checkPassword()">Submit</button>
+
+        </main>
+
+        <div id="bigdiv">
+
+            <section id="macbeth">
+
+                <h2>Macbeth</h2>
+
+                <ul>
+                    <li>This supernatural soliciting <br>
+                    Cannot be ill, cannot be good. If ill, <br>
+                    Why hath it given me earnest of success</li>
+                    <!-- 132-134 -->
+                    <li>Let not light see my black and deep desires.</li>
+                    <!-- 52 -->
+                    <li>
+                        I have done the deed.
+                    </li>
+                    <!-- 15 -->
+                    <li>
+                        Then live, Macduff. What need I fear of thee? <br>
+                        But yet I'll make assurance double sure <br>
+                        And take a bond of fate — thou shalt not live — <br>
+                        That I may tell pale-hearted fear it lies, <br>
+                        And sleep in spite of thunder.
+                    </li>
+                    <!-- 90-94 -->
+                </ul>
+            </section>
+
+            <section id="ladymacbeth">
+
+                <h2>Lady Macbeth</h2>
+
+                <ul>
+                    <li>
+                        What thou art promised; yet do I fear thy nature — <br>
+                        It is too full o'th milk of human kindness <br>
+                        To catch the nearest way. Thou wouldst be great, <br>
+                        Art not without ambition, but without <br>
+                        The illness should attend it.
+                    </li>
+                    <!-- 15-19 -->
+                    <li>
+                        Wouldst thou have that <br>
+                        Which thou esteem'st the ornament of life, <br>
+                        And live a coward in thine own esteem, <br>
+                        Letting 'I dare not' wait upon 'I would,' <br>
+                        Like the poor cat i' the adage?
+                    </li>
+                    <!-- 41-45 -->
+                    <li>
+                        Here's the smell of the blood still. All the <br>
+                        perfumes of Arabia will not sweeten this little <br>
+                        hand. Oh, oh, oh.    
+                    </li>
+                    <!-- 45-47 -->
+                </ul>
+            </section>
+
+            <section id="banquo">
+
+                <h2>Banquo</h2>
+
+                <ul>
+                    <li>
+                        Merciful powers, <br>
+                        Restrain in me the cursed thoughts that nature <br>
+                        Gives way to in repose.
+                    </li>
+                    <!-- 8-10 -->
+                    <li>
+                        Thou hast it now: king, Cawdor, Glamis, all <br>
+                        As the weird women promised, and, I fear, <br>
+                        Thou played’st most foully for't. 
+                    </li>
+                    <!-- 1-3 -->
+                    <li>
+                        O, treachery. <br>
+                        Fly, good Fleance, fly, fly, fly – thou mayst revenge. <br>
+                        O slave.
+                    </li>
+                    <!-- 19-21 -->
+                </ul>
+            </section>
+
+            <section id="macduff">
+
+                <h2>Macduff</h2>
+
+                <ul>
+                    <li>
+                        Awake, awake. <br>
+                        Ring the alarum-bell. Murder and treason.
+                    </li>
+                    <!-- 70-71 -->
+                    <li>
+                        Sinful Macduff, <br>
+                        They were all struck for thee — naught that I am. <br>
+                        Not for their own demerits, but for mine, <br>
+                        Fell slaughter on their souls. Heaven rest them now.
+                    </li>
+                    <!-- 224-227 -->
+                    <li>
+                        Despair thy charm, <br>
+                        And let the angel whom thou still hast served <br>
+                        Tell thee — Macduff was from his mother's womb <br>
+                        Untimely ripped.
+                    </li>
+                    <!-- 43-46 -->
+                </ul>
+            </section>
+
+            <section id="threewitches">
+
+                <h2>Three Witches</h2>
+
+                <ul>
+                    <li>Fair is foul, and foul is fair.</li>
+                    <!-- 12 -->
+                    <li>
+                    All hail, Macbeth. Hail to thee, Thane of Glamis. <br>
+                    All hail, Macbeth. Hail to thee, Thane of Cawdor. <br>
+                    All hail, Macbeth, that shalt be king hereafter.
+                    </li>
+                    <!-- 48-50 -->
+                    <li>
+                        Double, double, toil and trouble; <br>
+                        Fire burn, and cauldron bubble. (First time said only)
+                    </li>
+                    <!-- 10-11 -->
+                </ul>
+
+            </section>
+
+            <section id="extras">
+
+                <h2>Extras</h2>
+
+                <ul>
+                    <li>
+                        Here's a knocking indeed. If a man were porter of <br>
+                        Hell gate, he should have old turning the key.
+                    </li>
+                    <!-- 1-2 -->
+                    <li>
+                        Be bloody, bold, and resolute. Laugh to scorn <br>
+                        The power of man, for none of woman born <br>
+                        Shall harm Macbeth.
+                    </li>
+                    <!-- 87-89 -->
+                    <li>
+                        Bless you, fair dame. I am not to you known, <br>
+                        Though in your state of honor I am perfect. <br>
+                        I doubt some danger does approach you nearly. <br>
+                        If you will take a homely man's advice, <br>
+                        Be not found here; hence, with your little ones. <br>
+                        To fright you thus, methinks, I am too savage; <br>
+                        To do worse to you were fell cruelty, <br>
+                        Which is too nigh your person. Heaven preserve you. <br>
+                        I dare abide no longer.
+                    </li>
+                    <!-- 64-72 -->
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script>
+    function checkPassword() {
+      const correctPassword = "1321331345215909192939415161718194142434445454647891012319202170712242252262274344454612484950101112878889646566676869707172"; // CHANGE THIS
+      const userInput = document.getElementById("passwordInput").value;
+
+      if (userInput === correctPassword) {
+        window.open("https://www.google.com", "_blank"); // CHANGE LINK
+      } else {
+        document.getElementById("message").textContent = "Incorrect password!";
+      }
+    }
+  </script>
+</body>
+</html>
+
